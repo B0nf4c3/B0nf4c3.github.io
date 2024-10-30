@@ -17,7 +17,7 @@ This blog serves as a chronicle of my journey, featuring detailed walkthroughs, 
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
     <div style="display: inline-block; margin: 0 20px; vertical-align: middle;">
-        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2274474" style='border:none;'></iframe>
+        <img src="https://tryhackme-badges.s3.amazonaws.com/B0nf4c3.png" alt="Your Image Badge" />
     </div>
 </div>
 

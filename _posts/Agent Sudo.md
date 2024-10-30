@@ -1,3 +1,11 @@
+---
+title: TryHackMe - Agent Sudo
+author: Bonface
+date: 31/10/2024
+categories: [TryHackMe]
+tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
+---
+
 # Agent Sudo
 
 You found a secret server located under the deep sea.  
