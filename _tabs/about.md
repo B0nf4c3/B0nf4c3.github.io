@@ -1,3 +1,9 @@
+---
+# the default layout is 'page'
+icon: fas fa-info-circle
+order: 4
+---
+
 <h1 align="center">Hi 👋, I'm Bonface Maina</h1>
 <h3 align="center">Cybersecurity Enthusiast, CTF Player, and Blogger</h3>
 
