@@ -11,10 +11,7 @@ This blog serves as a chronicle of my journey, featuring detailed walkthroughs, 
 
 <div style="text-align: center; display: flex; justify-content: center; align-items: center;">
     <div style="display: inline-block; margin: 0 20px; vertical-align: middle;">
-        <script src="https://www.hackthebox.eu/badge/565048"></script>
-    </div>
-    <div style="display: inline-block; margin: 0 20px; vertical-align: middle;">
-        <script src="https://tryhackme.com/badge/367641"></script>
+        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2274474" style='border:none;'></iframe>
     </div>
 </div>
 
