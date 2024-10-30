@@ -19,10 +19,22 @@
 #   icon: 'fab fa-mastodon'   # icons powered by <https://fontawesome.com/>
 #   url:  ''                  # Fill with your Mastodon account page, rel="me" will be applied for verification
 #
-# - type: linkedin
-#   icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
-#   url:  ''                  # Fill with your Linkedin homepage
+- type: linkedin
+  icon: 'fab fa-linkedin'   # icons powered by <https://fontawesome.com/>
+  url:  'https://www.linkedin.com/in/bonface-njuru-maina'                  # Fill with your Linkedin homepage
 #
+- type: Telegram
+  icon: "fab fa-telegram"
+  url: "https://t.me/B0nf4c3"
+
+- type: HackTheBox
+  icon: "fas fa-cube"
+  url:  'https://app.hackthebox.com/profile/1670709' 
+
+- type: TryHackMe
+  icon: "fas fa-cloud"
+  url:  'https://tryhackme.com/p/B0nf4c3'
+
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
 #   url:  ''                  # Fill with your stackoverflow homepage
