@@ -4,9 +4,9 @@ author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
-img_path: /assets/img/Agent_sudo
 image:
-    path: assets/img/Agent_sudo/0.png
+    path: /assets/img/Agent_sudo/0.png
+    alt: Agent sudo
 ---
 
 # Agent Sudo

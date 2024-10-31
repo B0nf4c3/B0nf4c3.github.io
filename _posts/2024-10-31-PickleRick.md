@@ -4,9 +4,9 @@ author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, rustscan, privesc, http, ssh, command_injection]
-img_path: /assets/img/Pickle_Rick
 image:
-    path: 0.png
+    path: /assets/img/Pickle_Rick/0.jpeg
+    alt: Pickle_Rick
 ---
 
 # Pickle Rick

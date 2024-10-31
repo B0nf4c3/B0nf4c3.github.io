@@ -4,9 +4,9 @@ author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, ssh, http, gobuster ]
-img_path: /assets/img/LazyAdmin
 image:
-    path: 0.jpeg
+    path: /assets/img/LazyAdmin/0.jpeg
+    alt: LazyAdmin
 ---
 
 # LazyAdmin

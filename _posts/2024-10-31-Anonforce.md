@@ -4,9 +4,9 @@ author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, ftp, ssh, gpg, john, crack]
-img_path: /assets/img/Anonforce
 image:
-    path: 0.jpeg
+    path: /assets/img/Anonforce/0.jpeg
+    alt: Anonforce
 ---
 
 # Anonforce  
