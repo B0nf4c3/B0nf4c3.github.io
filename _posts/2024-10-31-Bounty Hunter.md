@@ -2,7 +2,7 @@
 title: TryHackMe - Bounty hunter
 author: Bonface
 date: 2024-10-31 00:00:00 +0000
-categories: [TryHackMe]
+categories: [TryHackMe, Easy]
 tags: [tryhackme, linux, nmap, privesc, ftp, hydra, ssh, gpg, john, SUID]
 ---
 

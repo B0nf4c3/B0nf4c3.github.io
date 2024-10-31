@@ -2,7 +2,7 @@
 title: TryHackMe - LazyAdmin
 author: Bonface
 date: 2024-10-31 00:00:00 +0000
-categories: [TryHackMe]
+categories: [TryHackMe, Easy]
 tags: [tryhackme, linux, nmap, privesc, ssh, http, gobuster ]
 image:
     path: /assets/img/try%20hack%20me%20/Easy/LazyAdmin/0.jpeg

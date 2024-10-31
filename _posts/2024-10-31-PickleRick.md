@@ -2,7 +2,7 @@
 title: TryHackMe - PickleRick
 author: Bonface
 date: 2024-10-31 00:00:00 +0000
-categories: [TryHackMe]
+categories: [TryHackMe, Easy]
 tags: [tryhackme, linux, rustscan, privesc, http, ssh, command_injection]
 image:
     path: /assets/img/try%20hack%20me%20/Easy/Pickle_Rick/0.jpeg
