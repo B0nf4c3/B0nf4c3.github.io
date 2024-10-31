@@ -1,7 +1,7 @@
 ---
 title: TryHackMe - GamingServer
 author: Bonface
-date: 2024-02-0900:00:00 +0000
+date: 2024-02-09 00:00:00 +0000
 categories:
   - TryHackMe
   - Easy
