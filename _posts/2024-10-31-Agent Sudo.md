@@ -6,7 +6,7 @@ categories: [TryHackMe]
 tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
 img_path: /assets/img/Agent_sudo
 image:
-    path: 0.png
+    path: assets/img/Agent_sudo/0.png
 ---
 
 # Agent Sudo
