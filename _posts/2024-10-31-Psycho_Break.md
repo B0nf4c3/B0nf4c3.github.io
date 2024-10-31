@@ -84,7 +84,7 @@ Nothing much so i just ignored the scan results and proceeded with other tests
 
 ## SourceCode
 From `http://10.10.201.211/` i get this on the source code  
-![[Pasted image 20241028212825.png]]
+![](/assets/img/Psycho_Break/1.png)
 
 Visited the site and got some interesting things.  
 
@@ -92,7 +92,7 @@ Websurfing
 site `http://10.10.240.78/sadistRoom`
 
 sadistRoom
-![[Pasted image 20241028212847.png]]
+![](/assets/img/Psycho_Break/2.png)
 
 After coping the key immediately i pressed ok i was redirected to another page that warned me to enter the key fast before sebastian died.  
 Entering The key i find Sebastian hiding in a Locker room.  
@@ -124,7 +124,7 @@ Safe Heaven
 -------------------------------------------------------------------------------------
 Looking around we find some pics and some text but nothing useful.  
 I head direct to the source code.  
-![[Pasted image 20241028213011.png]]
+![](/assets/img/Psycho_Break/3.png)
 Wander what it means so i just run a normal gobuster to see is there is any sub-directories.  
 
 ```sh
@@ -137,7 +137,7 @@ Looks like we have a directory named < /keeper >
 
 SafeHeaven/keeper
 --------------------------------------------------------------------------------------
-![[Pasted image 20241028213041.png]]
+![](/assets/img/Psycho_Break/4.png)
 
 Had to rush my osint skills since the timer was damn! on  
 steps 
@@ -146,7 +146,7 @@ steps
 3. upload the image
 
 To get = St. Augustine Lighthouse
-![[Pasted image 20241028213052.png]]
+![](/assets/img/Psycho_Break/5.png)
 
 The Abandoned Room
 --------------------------------------------------------------------------------------
@@ -159,11 +159,11 @@ The source code says something to do with `shell`.
 
 So i added ?shell=ls to the url .  
 And it works so i add “ls .. ” to view to directories before this one.  
-![[Pasted image 20241028213133.png]]
+![](/assets/img/Psycho_Break/6.png)
 
 Grabbed the first one coz time was almost over.  
 And got this:  
-![[Pasted image 20241028213148.png]]
+![](/assets/img/Psycho_Break/7.png)
 
 From `you_made_it.txt` we get: 
 `You made it. Escaping from Laura is not easy, good job ....`
@@ -196,7 +196,7 @@ From Joseph,
 - For the image its joseph i quees ,used exiftool but got nothing then tried steghide using the passphrase “SHOWME”
 - It worked and got “thankyou.txt"
 - concatenate to get
-![[Pasted image 20241028213235.png]]
+![](/assets/img/Psycho_Break/8.png)
 **THE FTP DETAILS AND I THINK THAT'S IT FOR WEB.**
 # ftp
 
@@ -205,10 +205,10 @@ ftp details
 	password = `intotheterror445`
 ls we get two files one is binary that accepts commands  
 wrote a python script that exploits it  
-![[Pasted image 20241028213326.png]]
+![](/assets/img/Psycho_Break/9.png)
 
 running the script we get a text 
-![[Pasted image 20241028213353.png]]
+![](/assets/img/Psycho_Break/10.png)
 
 decode it to get  `KIDMANSPASSWORDISSOSTRANGE`
 FROM THE FTP WE HAVE GOTTEN THIS CREDENTIALS

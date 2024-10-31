@@ -45,21 +45,21 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```sh
 gobuster dir -u http://10.10.69.28 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
-![[Pasted image 20241028194424.png]]
+![](/assets/img/GamingServer/1.png)
 
-## /secrets
-![[Pasted image 20241028194450.png]]
-I got a secret file that after downloading i found that it was a `ssh RSA`
-![[Pasted image 20241028194525.png]]
+## /secrets  
+![](/assets/img/GamingServer/2.png)  
+I got a secret file that after downloading i found that it was a `ssh RSA`  
+![](/assets/img/GamingServer/3.png)  
 
 
-![[Pasted image 20241028194545.png]]
+![](/assets/img/GamingServer/4.png)
 surfing through the web i get an upload directory.
 ## /uploads
-![[Pasted image 20241028194610.png]]
+![](/assets/img/GamingServer/5.png)
 
 I downloaded the dict.lst file that contains a list of i think passwords or usernames.  
-![[Pasted image 20241028194639.png]]
+![](/assets/img/GamingServer/6.png)
 
 - Manifesto.txt file that is a  very useless manifesto that is only there to teach you poetry`
 
@@ -67,7 +67,7 @@ I downloaded the dict.lst file that contains a list of i think passwords or user
 
 ## source-code
 Going back i got a comment from the dev.  
-![[Pasted image 20241028194657.png]]
+![](/assets/img/GamingServer/7.png)
 
 
 ## so far we have  
@@ -82,7 +82,7 @@ First attempt
 ```sh
 hydra -l john -P dict.lst 10.10.69.28 ssh 
 ```
-![[Pasted image 20241028194715.png]]
+![](/assets/img/GamingServer/8.png)
 
 -------------------------------------------------
 Second Attempt
@@ -91,7 +91,7 @@ Second Attempt
 	ssh2john secretKey > secret  
 	john --wordlist=dict.lst secret
 ```
-![[Pasted image 20241028194726.png]]
+![](/assets/img/GamingServer/9.png)
 ---------------------------------------------------
 Third Attempt
 ---------------------------------------------------
@@ -100,7 +100,7 @@ chmod 600 secretKey
 ssh john@10.10.69.28 -i secretKey
 ```
 This was much better.  
-![[Pasted image 20241028194746.png]]
+![](/assets/img/GamingServer/10.png)
 
 -----------------------------------------------------
 Forth Attempt
@@ -109,7 +109,7 @@ Forth Attempt
 /usr/share/john/ssh2john.py secretKey > secret
 sudo john secret -w=dict.lst
 ```
-![[Pasted image 20241028194803.png]]
+![](/assets/img/GamingServer/11.png)
 
 Now i have the passphrase `letmein`  
 Later, back to my senses and spotted my mistakes,Can you??  
@@ -180,4 +180,4 @@ To exploit the machine
 lxc exec privesc /bin/sh
 ```
 
-![[Pasted image 20241028194829.png]]
+![](/assets/img/GamingServer/12.png)

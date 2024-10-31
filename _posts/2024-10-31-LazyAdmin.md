@@ -54,7 +54,7 @@ To Do List
 
 ##  site
 
-![[Pasted image 20241028210430.png]]
+![](/assets/img/LazyAdmin/1.png)
 
 
 # gobuster
@@ -71,7 +71,7 @@ To Do List
 
 
 ## /content
-![[Pasted image 20241028210450.png]]
+![](/assets/img/LazyAdmin/2.png)
 
 Nothing much so i run another gobuster on the directory hoping to find sub-directories  
 
@@ -84,29 +84,29 @@ Nothing much so i run another gobuster on the directory hoping to find sub-direc
  gobuster dir -u http://10.10.10.216/content -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
 ```
-![[Pasted image 20241028210503.png]]
+![](/assets/img/LazyAdmin/3.png)
 
 ```sh
 /inc
 ```
-![[Pasted image 20241028210511.png]]
+![](/assets/img/LazyAdmin/4.png)
 
-![[Pasted image 20241028210520.png]]
+![](/assets/img/LazyAdmin/5.png)
 
 
-![[Pasted image 20241028210529.png]]
+![](/assets/img/LazyAdmin/6.png)
 
 admin = manager  
 password = 42f749ade7f9e195bf475f37a44cafcb\\  
 Decoding the password = Password123  
 
-![[Pasted image 20241028210548.png]]
+![](/assets/img/LazyAdmin/7.png)
 
 log in using the details.  
-![[Pasted image 20241028210603.png]]
+![](/assets/img/LazyAdmin/8.png)
 
 Let's look around searching for an exploit vector.  
-![[Pasted image 20241028210611.png]]
+![](/assets/img/LazyAdmin/9.png)
 
 Get a reverse shell script *php change the ip then copy paste it.  
 Now go to 10.10.10.216/content/inc/ads/shell.php but first run nc on your machine
@@ -129,10 +129,10 @@ will have to start all over again :
 
 **now we have a shell !!!**
 
-![[Pasted image 20241028210653.png]]
+![](/assets/img/LazyAdmin/10.png)  
 
-user flag = THM{...}
-![[Pasted image 20241028210728.png]]
+user flag = THM{...}  
+![](/assets/img/LazyAdmin/11.png)
 
 
 
@@ -144,13 +144,13 @@ python3 -c'importpty;pty.spawn("/bin/bash")'
 export TERM=xterm
 ```
 
-![[Pasted image 20241028210742.png]]
-Let's first look at the backup.pl 
-![[Pasted image 20241028210806.png]]
+![](/assets/img/LazyAdmin/12.png)  
+Let's first look at the backup.pl   
+![](/assets/img/LazyAdmin/13.png)  
 
 Runs the command with root previlage and we can read and execute it.  
 The script runs another script  
-![[Pasted image 20241028210833.png]]
+![](/assets/img/LazyAdmin/14.png)
 
 
 ```sh
@@ -165,6 +165,6 @@ On the machine run
 ```sh
 sudo /usr/bin/perl /home/itguy/backup.pl
 ```
-Root flag = THM{...}
-![[Pasted image 20241028210851.png]]
+Root flag = THM{...}  
+![](/assets/img/LazyAdmin/15.png)
 

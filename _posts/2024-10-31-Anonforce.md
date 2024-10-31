@@ -105,15 +105,15 @@ ftp seems to lack log in credentials so will start with that one.
 ftp anonymous@10.10.59.93
 ```
 
-Used default credentials `anonymous:anonymous`
-![[Pasted image 20241023205906.png]]
-Enumerating i got the user flag .
+Used default credentials `anonymous:anonymous`  
+![](/assets/img/Anonforce/1.png)  
+Enumerating i got the user flag .  
 
-![[Pasted image 20241023205925.png]]
+![](/assets/img/Anonforce/2.png)
 
 # Privilege Escalation
 
-![[Pasted image 20241023210111.png]]
+![](/assets/img/Anonforce/2.png)
 
 - We can not view or write any thing on the root directory
 - But there is a fishy directory with unique permissions.
@@ -122,9 +122,9 @@ Enumerating i got the user flag .
 cd notread
 mget *
 ```
-![[Pasted image 20241023210255.png]]
-- one file is an image while the other has some guddies :)
-![[Pasted image 20241023210402.png]]
+![](/assets/img/Anonforce/4.png)  
+one file is an image while the other has some guddies  
+![](/assets/img/Anonforce/5.png)
 
 Now we have 
 - open port 22 = ssh
@@ -132,7 +132,7 @@ Now we have
 
 Lacking a valid user name .
 run search_sploit to see if the ssh has an exploit
-![[Pasted image 20241023210818.png]]
+![](/assets/img/Anonforce/6.png)
 
 - Downloaded the exploit but was unable to use it.
 - Did some research.
@@ -147,7 +147,7 @@ First, what we need to do is import the private key into our keyring (key manage
 ```sh
 gpg --import private.asc
 ```
-![[Pasted image 20241023211242.png]]
+![](/assets/img/Anonforce/7.png)
 
 We need to crack the passphrase in order to import it into the key ring.  
 We can use `John the Ripper` password-cracking tool for this.  
@@ -161,7 +161,7 @@ Now we can run john to crack the hash using the famous `rockyou.txt` dictionary.
 ```sh
  john privatehash.txt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
-![[Pasted image 20241023211321.png]]
+![](/assets/img/Anonforce/8.png)
 
 Now that we have the passphrase for the private key, we can import it into the keyring and decrypt the backup.pgp file.  
 
@@ -172,13 +172,13 @@ gpg --import private.asc
 
 gpg --decrypt backup.pgp
 ```
-![[Pasted image 20241023211403.png]]
+![](/assets/img/Anonforce/9.png)
 We will get a backup of the passwd file, that includes the password hash of root and melodias users.  
-![[Pasted image 20241023211412.png]]
+![](/assets/img/Anonforce/10.png)
 
 Now we crack the passwd file using john.
-![[Pasted image 20241023211507.png]]
-![[Pasted image 20241023211532.png]]
+![](/assets/img/Anonforce/11.png)
+![](/assets/img/Anonforce/12.png)
 
   
 - username = root  
@@ -187,4 +187,4 @@ Now we crack the passwd file using john.
 ```sh
  ssh root@10.10.59.93
  ```  
-![[Pasted image 20241023211544.png]]
+![](/assets/img/Anonforce/13.png)

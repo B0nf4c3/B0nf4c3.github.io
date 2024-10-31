@@ -6,7 +6,6 @@
       {
         "id": "48188e58b5beb87b",
         "type": "tabs",
-        "dimension": 70.0587084148728,
         "children": [
           {
             "id": "a762b3310257d8b2",
@@ -14,35 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-10-31-Psycho_Break.md",
-                "mode": "source",
+                "file": "_posts/2024-10-31-Anonforce.md",
+                "mode": "preview",
                 "backlinks": false,
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2024-10-31-Psycho_Break"
-            },
-            "group": "06360d44a98af01f"
-          }
-        ]
-      },
-      {
-        "id": "e57922821a131ab7",
-        "type": "tabs",
-        "dimension": 29.9412915851272,
-        "children": [
-          {
-            "id": "6444c612c12b5ec8",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "_posts/2024-10-31-Psycho_Break.md"
-              },
-              "icon": "lucide-list",
-              "title": "Outline of 2024-10-31-Psycho_Break"
-            },
-            "group": "06360d44a98af01f"
+              "title": "2024-10-31-Anonforce"
+            }
           }
         ]
       }
@@ -187,16 +165,18 @@
   },
   "active": "86cfc9a8fd9833a4",
   "lastOpenFiles": [
-    "assets/img/Agent_sudo/10.png",
-    "assets/img/Agent_sudo/9.png",
-    "assets/img/Agent_sudo/8.png",
-    "assets/img/Agent_sudo/7.png",
-    "assets/img/Agent_sudo/6.png",
-    "assets/img/Agent_sudo/5.png",
-    "assets/img/Agent_sudo/4.png",
-    "assets/img/Agent_sudo/3.png",
-    "assets/img/Agent_sudo/2.png",
-    "assets/img/Agent_sudo/1.png",
+    "_posts/Thompson.md",
+    "assets/img/plotted/9.png",
+    "assets/img/plotted/8.png",
+    "assets/img/plotted/7.png",
+    "assets/img/plotted/6.png",
+    "assets/img/plotted/5.png",
+    "assets/img/plotted/4.png",
+    "assets/img/plotted/3.png",
+    "assets/img/plotted/2.png",
+    "assets/img/plotted/1.png",
+    "assets/img/Thompson/7.png",
+    "_posts/2024-10-31-Psycho_Break.md",
     "_posts/2024-10-31-plotted.md",
     "_posts/2024-10-31-PickleRick.md",
     "_posts/2024-10-31-OverlayFS.md",
