@@ -192,14 +192,7 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-  - scope:
-      path: assets/images/favicon
-    values:
-      swcache: true
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
+
 
 sass:
   style: compressed
