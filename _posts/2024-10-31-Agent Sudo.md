@@ -154,7 +154,7 @@ Details
  ssh james@10.10.55.182 
 # password = hackerrules!
 ```
-![](/assets/img/Agent_sudo/87.png)
+![](/assets/img/Agent_sudo/7.png)
 
 ## Privilege escalation
 Run sudo -l  
