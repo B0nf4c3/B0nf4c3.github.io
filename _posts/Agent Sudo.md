@@ -1,7 +1,7 @@
 ---
 title: TryHackMe - Agent Sudo
 author: Bonface
-date: 31/10/2024
+date: 2021-12-21 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
 ---
