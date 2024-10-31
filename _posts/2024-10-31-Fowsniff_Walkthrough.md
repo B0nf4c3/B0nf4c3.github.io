@@ -1,11 +1,19 @@
-## My ip address 
+---
+title: TryHackMe - Fowsniff_Walkthrough
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, nmap, privesc, http, ssh, crack]
+---
+
+** My ip address **
 `10.10.28.128`
 
 # nmap scan
 ```sh
 	sudo nmap -v -sS -sC 10.10.28.128 | tee nmap.txt
 ```
-## Result  
+
 
 ```sh
 	Discovered open port 80/tcp on 10.10.28.128

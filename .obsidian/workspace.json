@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "2b20b5c089fba48f",
+    "type": "split",
+    "children": [
+      {
+        "id": "48188e58b5beb87b",
+        "type": "tabs",
+        "dimension": 70.0587084148728,
+        "children": [
+          {
+            "id": "a762b3310257d8b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-10-31-Psycho_Break.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2024-10-31-Psycho_Break"
+            },
+            "group": "06360d44a98af01f"
+          }
+        ]
+      },
+      {
+        "id": "e57922821a131ab7",
+        "type": "tabs",
+        "dimension": 29.9412915851272,
+        "children": [
+          {
+            "id": "6444c612c12b5ec8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2024-10-31-Psycho_Break.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-10-31-Psycho_Break"
+            },
+            "group": "06360d44a98af01f"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8aba3c0e23a7791f",
+    "type": "split",
+    "children": [
+      {
+        "id": "90b7c00c05453799",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86cfc9a8fd9833a4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5139a213f06452a3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "36c586bce6d4860d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0a9ec4c889f35a83",
+    "type": "split",
+    "children": [
+      {
+        "id": "acaaf33898f92c11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c3e3a260fac7346c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/2024-10-31-Psycho_Break.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-10-31-Psycho_Break"
+            }
+          },
+          {
+            "id": "5c7e8411456e49bf",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/2024-10-31-Psycho_Break.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-10-31-Psycho_Break"
+            }
+          },
+          {
+            "id": "53cafe1d858fbdfc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ceda1e6a074c70a8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/2024-10-31-Psycho_Break.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-10-31-Psycho_Break"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "86cfc9a8fd9833a4",
+  "lastOpenFiles": [
+    "assets/img/Agent_sudo/10.png",
+    "assets/img/Agent_sudo/9.png",
+    "assets/img/Agent_sudo/8.png",
+    "assets/img/Agent_sudo/7.png",
+    "assets/img/Agent_sudo/6.png",
+    "assets/img/Agent_sudo/5.png",
+    "assets/img/Agent_sudo/4.png",
+    "assets/img/Agent_sudo/3.png",
+    "assets/img/Agent_sudo/2.png",
+    "assets/img/Agent_sudo/1.png",
+    "_posts/2024-10-31-plotted.md",
+    "_posts/2024-10-31-PickleRick.md",
+    "_posts/2024-10-31-OverlayFS.md",
+    "_posts/2024-10-31-LazyAdmin.md",
+    "_posts/2024-10-31-Kenobi.md",
+    "_posts/2024-10-31-Ignite.md",
+    "_posts/2024-10-31-GamingServer.md",
+    "_posts/2024-10-31-Fowsniff_Walkthrough.md",
+    "_posts/2024-10-31-Dav.md",
+    "_posts/2024-10-31-Brute It.md",
+    "_posts/2024-10-31-brooklyn.md",
+    "_posts/2024-10-31-Bounty Hunter.md",
+    "_posts/2024-10-31-Basic_Pentesting_walkthrough.md",
+    "_posts/2024-10-31-Anonforce.md",
+    "_posts/2024-10-31-Agent Sudo.md"
+  ]
+}

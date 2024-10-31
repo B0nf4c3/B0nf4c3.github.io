@@ -1,3 +1,11 @@
+---
+title: TryHackMe - Bounty hunter
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, nmap, privesc, http, gobuster, ssh]
+---
+
 # Psycho_Break
 
 
@@ -28,7 +36,7 @@ PORT STATE SERVICE VERSION
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
-## dicovered 3 open ports
+## discovered 3 open ports
 that is :
 - 21 ftp
 - 22 ssh
@@ -50,11 +58,11 @@ To Do List
 - Robots.txt
 - gobuster
 
-## command
+
 ```sh
 gobuster dir -u http://10.10.201.211 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
-#Result
+
 ```sh
 ===============================================================
 Starting gobuster in directory enumeration mode
@@ -109,7 +117,7 @@ Here is the map
 2. Locker Room
 3. Safe Heaven
 4. The Abandoned Room
-We have visited yhe first two rooms ,let's head direct to the safe house
+We have visited the first two rooms ,let's head direct to the safe house
 
 
 Safe Heaven
@@ -119,18 +127,16 @@ I head direct to the source code.
 ![[Pasted image 20241028213011.png]]
 Wander what it means so i just run a normal gobuster to see is there is any sub-directories.  
 
-## command
 ```sh
 gobuster dir -u http://10.10.240.78/SafeHeaven/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
-## Result
 
 Looks like we have a directory named < /keeper >
 `http://10.10.240.78/SafeHeaven/keeper`
 
 
 SafeHeaven/keeper
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 ![[Pasted image 20241028213041.png]]
 
 Had to rush my osint skills since the timer was damn! on  
@@ -143,7 +149,7 @@ To get = St. Augustine Lighthouse
 ![[Pasted image 20241028213052.png]]
 
 The Abandoned Room
---------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------
 We first enter the keeper's key to access the room.  
 Sebastian wants to do further investigation .  
 Okay let's help him.  

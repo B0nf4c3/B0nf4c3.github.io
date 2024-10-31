@@ -1,10 +1,11 @@
 ---
 title: TryHackMe - Anonforce
 author: Bonface
-date: 2021-12-21 00:00:00 +0000
+date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
-tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
+tags: [tryhackme, linux, nmap, privesc, ftp, ssh, gpg, john, crack]
 ---
+
 # Anonforce  
 
 boot2root machine for FIT and bsides guatemala CTF  
@@ -13,7 +14,6 @@ boot2root machine for FIT and bsides guatemala CTF
 Read user.txt and root.txt  
 
 # nmap
-## ip = 10.10.59.93  
 
 ```sh
 nmap -sV -sC -v 10.10.59.93 | tee nmap.txt
@@ -167,7 +167,6 @@ Now that we have the passphrase for the private key, we can import it into the k
 
 passphrase = `xbox360`
 
-## Commands 
 ```sh
 gpg --import private.asc
 
@@ -181,7 +180,6 @@ Now we crack the passwd file using john.
 ![[Pasted image 20241023211507.png]]
 ![[Pasted image 20241023211532.png]]
 
-## Details  
   
 - username = root  
 - password = hikari  

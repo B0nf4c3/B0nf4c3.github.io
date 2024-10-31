@@ -1,3 +1,11 @@
+---
+title: TryHackMe - OverlayFS
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, nmap, privesc, ssh, gcc]
+---
+
 # Intro
 
 OverlayFS is a Linux kernel module that allows the system to combine several mount points into one, so that you can access all the files from each within one directory structure.  

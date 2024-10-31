@@ -1,4 +1,10 @@
-machine ip `10.10.71.74`
+---
+title: TryHackMe - Bounty hunter
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, nmap, privesc, ftp, hydra, ssh, gpg, john, SUID]
+---
 
 ### nmap
 

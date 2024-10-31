@@ -1,3 +1,11 @@
+---
+title: TryHackMe - GamingServer
+author: Bonface
+date: 2024-10-31 00:00:00 +0000
+categories: [TryHackMe]
+tags: [tryhackme, linux, nmap, privesc, http, gobuster, ssh, brute, lxd]
+---
+
 # GamingServer
 
 - An Easy Boot2Root box for beginners.  
@@ -32,7 +40,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ## ip `10.10.69.28`
 
-# Gobuster
+## Gobuster
 
 ```sh
 gobuster dir -u http://10.10.69.28 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
@@ -57,7 +65,7 @@ I downloaded the dict.lst file that contains a list of i think passwords or user
 
 
 
-# source-code
+## source-code
 Going back i got a comment from the dev.  
 ![[Pasted image 20241028194657.png]]
 
