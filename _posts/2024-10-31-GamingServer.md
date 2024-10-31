@@ -4,6 +4,9 @@ author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, http, gobuster, ssh, brute, lxd]
+img_path: /assets/img/GamingServer
+image:
+    path: 0.png
 ---
 
 # GamingServer

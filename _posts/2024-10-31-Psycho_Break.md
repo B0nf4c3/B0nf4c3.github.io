@@ -1,9 +1,12 @@
 ---
-title: TryHackMe - Bounty hunter
+title: TryHackMe - Psycho_Break
 author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, http, gobuster, ssh]
+img_path: /assets/img/Psycho_Break
+image:
+    path: 0.png
 ---
 
 # Psycho_Break
