@@ -11,14 +11,14 @@ tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gob
 You found a secret server located under the deep sea.  
 Your task is to hack inside the server and reveal the truth.
 
-#### Task 2: [Enumerate](##Enumerate)
+#### Task 2: Enumerate
 ### Task 3: Hash cracking and [brute-force](#bruteforce)
 
 ### Task 4: Capture the user flag  
 ### Task 5: Privilege escalation
 
 
-##  Enumerate
+## Enumerate
 ### nmap
 
 ### ip = 10.10.55.182
