@@ -1,12 +1,23 @@
 ---
 title: TryHackMe - Anonforce
 author: Bonface
-date: 2024-10-31 00:00:00 +0000
-categories: [TryHackMe, Easy]
-tags: [tryhackme, linux, nmap, privesc, ftp, ssh, gpg, john, crack]
+date: 2024-01-10 00:00:00 +0000
+categories:
+  - TryHackMe
+  - Easy
+tags:
+  - tryhackme
+  - linux
+  - nmap
+  - privesc
+  - ftp
+  - ssh
+  - gpg
+  - john
+  - crack
 image:
-    path: /assets/img/try%20hack%20me%20/Easy/Anonforce/0.jpeg
-    alt: Anonforce
+  path: /assets/img/try%20hack%20me%20/Easy/Anonforce/0.jpeg
+  alt: Anonforce
 ---
 
 # Anonforce  
