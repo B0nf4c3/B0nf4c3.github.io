@@ -5,7 +5,7 @@ date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, ssh, http, gobuster ]
 image:
-    path: /assets/img/LazyAdmin/0.jpeg
+    path: /assets/img/try%20hack%20me%20/Easy/LazyAdmin/0.jpeg
     alt: LazyAdmin
 ---
 
@@ -57,7 +57,7 @@ To Do List
 
 ##  site
 
-![](/assets/img/LazyAdmin/1.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/1.png)
 
 
 # gobuster
@@ -74,7 +74,7 @@ To Do List
 
 
 ## /content
-![](/assets/img/LazyAdmin/2.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/2.png)
 
 Nothing much so i run another gobuster on the directory hoping to find sub-directories  
 
@@ -87,29 +87,29 @@ Nothing much so i run another gobuster on the directory hoping to find sub-direc
  gobuster dir -u http://10.10.10.216/content -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 
 ```
-![](/assets/img/LazyAdmin/3.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/3.png)
 
 ```sh
 /inc
 ```
-![](/assets/img/LazyAdmin/4.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/4.png)
 
-![](/assets/img/LazyAdmin/5.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/5.png)
 
 
-![](/assets/img/LazyAdmin/6.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/6.png)
 
 admin = manager  
 password = 42f749ade7f9e195bf475f37a44cafcb\\  
 Decoding the password = Password123  
 
-![](/assets/img/LazyAdmin/7.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/7.png)
 
 log in using the details.  
-![](/assets/img/LazyAdmin/8.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/8.png)
 
 Let's look around searching for an exploit vector.  
-![](/assets/img/LazyAdmin/9.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/9.png)
 
 Get a reverse shell script *php change the ip then copy paste it.  
 Now go to 10.10.10.216/content/inc/ads/shell.php but first run nc on your machine
@@ -132,10 +132,10 @@ will have to start all over again :
 
 **now we have a shell !!!**
 
-![](/assets/img/LazyAdmin/10.png)  
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/10.png)  
 
 user flag = THM{...}  
-![](/assets/img/LazyAdmin/11.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/11.png)
 
 
 
@@ -147,13 +147,13 @@ python3 -c'importpty;pty.spawn("/bin/bash")'
 export TERM=xterm
 ```
 
-![](/assets/img/LazyAdmin/12.png)  
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/12.png)  
 Let's first look at the backup.pl   
-![](/assets/img/LazyAdmin/13.png)  
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/13.png)  
 
 Runs the command with root previlage and we can read and execute it.  
 The script runs another script  
-![](/assets/img/LazyAdmin/14.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/14.png)
 
 
 ```sh
@@ -169,5 +169,5 @@ On the machine run
 sudo /usr/bin/perl /home/itguy/backup.pl
 ```
 Root flag = THM{...}  
-![](/assets/img/LazyAdmin/15.png)
+![](/assets/img/try%20hack%20me%20/Easy/LazyAdmin/15.png)
 

