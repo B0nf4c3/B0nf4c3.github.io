@@ -6,7 +6,7 @@ categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, ftp, ssh, gpg, john, crack]
 img_path: /assets/img/Anonforce
 image:
-    path: 0.png
+    path: 0.jpeg
 ---
 
 # Anonforce  

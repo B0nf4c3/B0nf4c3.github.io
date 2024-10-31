@@ -6,7 +6,7 @@ categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, ssh, http, gobuster ]
 img_path: /assets/img/LazyAdmin
 image:
-    path: 0.png
+    path: 0.jpeg
 ---
 
 # LazyAdmin

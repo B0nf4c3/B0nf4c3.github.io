@@ -6,7 +6,7 @@ categories: [TryHackMe]
 tags: [tryhackme, linux, nmap, privesc, http, gobuster, ssh, brute, lxd]
 img_path: /assets/img/GamingServer
 image:
-    path: 0.png
+    path: 0.jpeg
 ---
 
 # GamingServer
