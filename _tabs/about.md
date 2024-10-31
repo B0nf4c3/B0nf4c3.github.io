@@ -5,7 +5,7 @@ order: 4
 ---
 
 <h1 align="center">Hi 👋, I'm Bonface Maina</h1>
-<h3 align="center">Cybersecurity Enthusiast, CTF Player, and Blogger</h3>
+<h3 align="center">Cybersecurity Enthusiast and CTF Player</h3>
 
 I'm an IT undergraduate and a dedicated cybersecurity enthusiast with a strong focus on continuous learning and hands-on practice. Through self-guided studies and participation in Capture the Flag (CTF) challenges, I've developed a well-rounded skill set in various cybersecurity domains, including **penetration testing**, **network security**, and **digital forensics**. I actively engage on platforms like **TryHackMe** and **HackTheBox**, where I apply my skills in real-world scenarios and constantly push my boundaries.
 
