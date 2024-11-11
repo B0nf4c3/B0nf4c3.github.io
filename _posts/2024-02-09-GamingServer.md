@@ -16,7 +16,7 @@ tags:
   - brute
   - lxd
 image:
-  path: /assets/img/try%20hack%20me%20/Easy/GamingServer/0.jpeg
+  path: /assets/img/try_hack_me/Easy/GamingServer/0.jpeg
   alt: GamingServer
 ---
 

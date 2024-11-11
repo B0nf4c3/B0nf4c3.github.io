@@ -17,7 +17,7 @@ tags:
   - crack
   - gobuster
 image:
-  path: /assets/img/try%20hack%20me%20/Easy/Agent_sudo/0.png
+  path: /assets/img/try_hack_me/Easy/Agent_sudo/0.png
   alt: Agent sudo
 ---
 

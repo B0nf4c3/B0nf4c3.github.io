@@ -14,7 +14,7 @@ tags:
   - gobuster
   - ssh
 image:
-  path: /assets/img/try%20hack%20me%20/Easy/Psycho_Break/0.jpeg
+  path: /assets/img/try_hack_me/Easy/Psycho_Break/0.jpeg
   alt: Psycho_Break
 ---
 

@@ -14,7 +14,7 @@ tags:
   - ssh
   - command_injection
 image:
-  path: /assets/img/try%20hack%20me%20/Easy/Pickle_Rick/0.jpeg
+  path: /assets/img/try_hack_me/Easy/Pickle_Rick/0.jpeg
   alt: Pickle_Rick
 ---
 

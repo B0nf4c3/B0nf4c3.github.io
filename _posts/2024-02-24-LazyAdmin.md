@@ -14,7 +14,7 @@ tags:
   - http
   - gobuster
 image:
-  path: /assets/img/try%20hack%20me%20/Easy/LazyAdmin/0.jpeg
+  path: /assets/img/try_hack_me/Easy/LazyAdmin/0.jpeg
   alt: LazyAdmin
 ---
 
