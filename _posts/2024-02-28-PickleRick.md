@@ -79,19 +79,19 @@ ssh will need user login details that we don't have yet so we'll skip that and m
 
 
 ## The site
-![](/assets/img/try%20hack%20me%20/Easy/Pickle_Rick/1.png)
+![](../assets/img/try_hack_me/Easy/Pickle_Rick/1.png)
 From the content, I think I will have to use burp suite at some point.  
 But let's continue and come back to it later on.
 
 
 ## Source code
-![](/assets/img/try%20hack%20me%20/Easy/Pickle_Rick/2.png)
+![](../assets/img/try_hack_me/Easy/Pickle_Rick/2.png)
 
 Here I get a username that is good.
 - Username: R1ckRul3s
 
 ## Robots.txt
-![](/assets/img/try%20hack%20me%20/Easy/Pickle_Rick/3.png)
+![](../assets/img/try_hack_me/Easy/Pickle_Rick/3.png)
 
 Got this text but not sure what it is:  
 - "Wubbalubbadubdub"
@@ -103,7 +103,7 @@ Got this text but not sure what it is:
 gobuster dir -u http://10.10.103.97 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt 
 ```
 The wordlist was taking some time and giving me lots of errors so I changed to ...../dirb/common.txt
-![](/assets/img/try%20hack%20me%20/Easy/Pickle_Rick/4.png)
+![](../assets/img/try_hack_me/Easy/Pickle_Rick/4.png)
 
 
 ## Run nikto scan
@@ -122,14 +122,14 @@ nikto -h 10.10.103.97
 Web/HTTP/Cookies
 
 ```
-![](/assets/img/try%20hack%20me%20/Easy/Pickle_Rick/5.png)
+![](../assets/img/try_hack_me/Easy/Pickle_Rick/5.png)
 
 At least now I know what to do with the username and the other text from robots.txt:  
 - username: R1ckRul3s  
 - password: Wubbalubbadubdub  
 
 Successful login  
-![](/assets/img/try%20hack%20me%20/Easy/Pickle_Rick/6.png)
+![](../assets/img/try_hack_me/Easy/Pickle_Rick/6.png)
 
 
 Here we can execute commands.  

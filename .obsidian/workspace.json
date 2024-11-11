@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "48188e58b5beb87b",
+        "id": "56a3695a343ec21b",
         "type": "tabs",
         "children": [
           {
-            "id": "a762b3310257d8b2",
+            "id": "4c531aa69eb4a53c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-10-31-plotted.md",
+                "file": "_posts/template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-10-31-plotted"
+              "title": "template"
             }
           }
         ]
@@ -162,9 +162,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a762b3310257d8b2",
+  "active": "4c531aa69eb4a53c",
   "lastOpenFiles": [
-    "assets/img/Sh3rl0ck.jpg",
+    "_posts/Wreath.md",
+    "_posts/template.md",
+    "_posts/2024-11-11-Red.md",
+    "assets/img/try_hack_me/Easy/Red/14.png",
+    "assets/img/try_hack_me/Easy/Red/17.png",
+    "assets/img/try_hack_me/Easy/Red/16.png",
+    "assets/img/try_hack_me/Easy/Red/15.png",
+    "_posts/2024-11-11 15-Lian_Yu.md",
+    "_posts/2024-10-31-plotted.md",
+    "assets/img/try_hack_me/Easy/LazyAdmin/0.jpeg",
+    "assets/img/try_hack_me/Easy/Red/5.png",
+    "_posts/2024-01-17-Basic_Pentesting_walkthrough.md",
+    "assets/img/try_hack_me/Easy/Red/2.png",
+    "assets/img/try_hack_me/Easy/Red/12.png",
+    "assets/img/try_hack_me/Easy/Red/13.png",
+    "assets/img/try_hack_me/Easy/Red/11.png",
+    "_posts/2024-01-03-Agent Sudo.md",
+    "assets/img/try_hack_me/Easy/Red",
+    "_tabs/tags.md",
+    "_tabs/categories.md",
+    "_tabs/archives.md",
+    "_tabs/about.md",
+    "README.md",
     "_posts/2024-04-18-brooklyn.md",
     "_posts/2024-03-28-Thompson.md",
     "_posts/2024-03-14-Psycho_Break.md",
@@ -177,28 +199,6 @@
     "_posts/2024-02-07-Fowsniff_Walkthrough.md",
     "_posts/2024-02-01-Dav.md",
     "_posts/2024-01-31-Brute It.md",
-    "_posts/2024-01-24-Bounty Hunter.md",
-    "_posts/2024-01-17-Basic_Pentesting_walkthrough.md",
-    "_posts/2024-01-10-Anonforce.md",
-    "_posts/2024-01-03-Agent Sudo.md",
-    "_posts/2024-10-31-plotted.md",
-    "_posts/2024-10-31-Thompson.md",
-    "assets/img/plotted/0.jpeg",
-    "assets/img/Thompson/0.png",
-    "assets/img/Psycho_Break/0.jpeg",
-    "assets/img/Pickle_Rick/0.jpeg",
-    "assets/img/Lian_yu/0.jpeg",
-    "assets/img/LazyAdmin/0.jpeg",
-    "assets/img/Kenobi/0.png",
-    "assets/img/Ignite/0.png",
-    "assets/img/GamingServer/0.jpeg",
-    "assets/img/Dav/0.jpeg",
-    "_posts/Thompson.md",
-    "_posts/2024-10-31-Psycho_Break.md",
-    "_posts/2024-10-31-PickleRick.md",
-    "_posts/2024-10-31-OverlayFS.md",
-    "_posts/2024-10-31-LazyAdmin.md",
-    "_posts/2024-10-31-Kenobi.md",
-    "_posts/2024-10-31-Ignite.md"
+    "_posts/2024-01-24-Bounty Hunter.md"
   ]
 }

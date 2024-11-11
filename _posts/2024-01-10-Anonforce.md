@@ -120,14 +120,14 @@ ftp anonymous@10.10.59.93
 ```
 
 Used default credentials `anonymous:anonymous`  
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/1.png)  
+![](../assets/img/try_hack_me/Easy/Anonforce/1.png)  
 Enumerating i got the user flag .  
 
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/2.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/2.png)
 
 # Privilege Escalation
 
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/2.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/2.png)
 
 - We can not view or write any thing on the root directory
 - But there is a fishy directory with unique permissions.
@@ -136,9 +136,9 @@ Enumerating i got the user flag .
 cd notread
 mget *
 ```
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/4.png)  
+![](../assets/img/try_hack_me/Easy/Anonforce/4.png)  
 one file is an image while the other has some guddies  
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/5.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/5.png)
 
 Now we have 
 - open port 22 = ssh
@@ -146,7 +146,7 @@ Now we have
 
 Lacking a valid user name .
 run search_sploit to see if the ssh has an exploit
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/6.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/6.png)
 
 - Downloaded the exploit but was unable to use it.
 - Did some research.
@@ -161,7 +161,7 @@ First, what we need to do is import the private key into our keyring (key manage
 ```sh
 gpg --import private.asc
 ```
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/7.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/7.png)
 
 We need to crack the passphrase in order to import it into the key ring.  
 We can use `John the Ripper` password-cracking tool for this.  
@@ -175,7 +175,7 @@ Now we can run john to crack the hash using the famous `rockyou.txt` dictionary.
 ```sh
  john privatehash.txt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/8.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/8.png)
 
 Now that we have the passphrase for the private key, we can import it into the keyring and decrypt the backup.pgp file.  
 
@@ -186,13 +186,13 @@ gpg --import private.asc
 
 gpg --decrypt backup.pgp
 ```
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/9.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/9.png)
 We will get a backup of the passwd file, that includes the password hash of root and melodias users.  
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/10.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/10.png)
 
 Now we crack the passwd file using john.
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/11.png)
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/12.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/11.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/12.png)
 
   
 - username = root  
@@ -201,4 +201,4 @@ Now we crack the passwd file using john.
 ```sh
  ssh root@10.10.59.93
  ```  
-![](/assets/img/try%20hack%20me%20/Easy/Anonforce/13.png)
+![](../assets/img/try_hack_me/Easy/Anonforce/13.png)
