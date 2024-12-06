@@ -181,7 +181,8 @@ From `you_made_it.txt` we get:
 `You made it. Escaping from Laura is not easy, good job ....`
 From the `helpme.zip`
 1. First unzip it.
-2. cat the txt file
+2. cat the txt file 
+
 ```sh
 cat helpme.txt
 From Joseph,
@@ -192,14 +193,15 @@ From Joseph,
 ```
 - Joseph is asking for help.  
 
+
 3. The image does not open normaly.  
-- binwalk Table.jpg
-- we see it has some files embedded in it .
-- binwalk -e Table.jpg
-- we get this 3 files
-1) 0.zip
-2) Joseph_Oda.jpg
-3) key.wav
+  - binwalk Table.jpg
+  - we see it has some files embedded in it .
+  - binwalk -e Table.jpg
+  - we get this 3 files
+      1) 0.zip
+      2) Joseph_Oda.jpg
+      3) key.wav
 
 - Listening to key.wav its a voice or something .
 - Doing some research its a morse code.
@@ -207,9 +209,13 @@ From Joseph,
 
 - For the image its joseph i quees ,used exiftool but got nothing then tried steghide using the passphrase “SHOWME”
 - It worked and got “thankyou.txt"
-- concatenate to get
+- cat to get
+
 ![](../assets/img/try_hack_me/Easy/Psycho_Break/8.png)
+
 **THE FTP DETAILS AND I THINK THAT'S IT FOR WEB.**
+
+
 # ftp
 
 ftp details
@@ -217,9 +223,9 @@ ftp details
 	password = `intotheterror445`
 ls we get two files one is binary that accepts commands  
 wrote a python script that exploits it  
-![](../assets/img/try_hack_me/Easy/Psycho_Break/9.png)
+![](../assets/img/try_hack_me/Easy/Psycho_Break/9.png)  
 
-running the script we get a text 
+running the script we get a text   
 ![](../assets/img/try_hack_me/Easy/Psycho_Break/10.png)
 
 decode it to get  `KIDMANSPASSWORDISSOSTRANGE`
@@ -235,7 +241,7 @@ ssh kidman@10.10.129.236
 #password = KIDMANSPASSWORDISSOSTRANGE
 ```
 we get a shell  
-concatenate the user flag = “...”  
+cat the user flag = “...”  
 Now privesc to root user  
 
 cat /ec/crontab
