@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "56a3695a343ec21b",
+        "id": "153db6e886d5905f",
         "type": "tabs",
         "children": [
           {
-            "id": "4c531aa69eb4a53c",
+            "id": "13e02148107cd2b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_posts/2024-11-11-Red.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2024-11-11-Red"
+              "title": "New tab"
             }
           }
         ]
@@ -162,13 +158,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4c531aa69eb4a53c",
+  "active": "86cfc9a8fd9833a4",
   "lastOpenFiles": [
     "_posts/template.md",
+    "_posts/2024-11-15-Lian_Yu.md",
     "_posts/2024-11-11-Red.md",
-    "_posts/2024-11-11 15-Lian_Yu.md",
+    "_posts/2024-01-03-Agent Sudo.md",
     "_posts/2024-10-31-plotted.md",
     "_posts/2024-04-18-brooklyn.md",
+    "_posts/2024-11-08-BlueHens CTF 2024.md",
+    "2024-12-01-CYBERGON CTF_2024.md",
+    "2024-12-01-CYBERGON CTF_2024",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/9.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/8.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/7.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/6.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/5.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/4.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/3.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/2.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem/1.png",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Inner Demons/yes.gif",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem",
+    "assets/img/CTF_Competitions/BlueHens_imgs/Inner Demons",
+    "assets/img/CTF_Competitions/BlueHens_imgs",
     "_posts/2024-03-28-Thompson.md",
     "_posts/2024-02-28-PickleRick.md",
     "_posts/2024-03-14-Psycho_Break.md",
@@ -183,23 +196,10 @@
     "_posts/2024-01-10-Anonforce.md",
     "_posts/2024-01-24-Bounty Hunter.md",
     "_posts/2024-01-17-Basic_Pentesting_walkthrough.md",
-    "_posts/2024-01-03-Agent Sudo.md",
     "_posts/Wreath.md",
-    "assets/img/try_hack_me/Easy/Red/14.png",
-    "assets/img/try_hack_me/Easy/Red/17.png",
-    "assets/img/try_hack_me/Easy/Red/16.png",
-    "assets/img/try_hack_me/Easy/Red/15.png",
-    "assets/img/try_hack_me/Easy/LazyAdmin/0.jpeg",
-    "assets/img/try_hack_me/Easy/Red/5.png",
-    "assets/img/try_hack_me/Easy/Red/2.png",
-    "assets/img/try_hack_me/Easy/Red/12.png",
-    "assets/img/try_hack_me/Easy/Red/13.png",
-    "assets/img/try_hack_me/Easy/Red/11.png",
     "assets/img/try_hack_me/Easy/Red",
     "_tabs/tags.md",
     "_tabs/categories.md",
-    "_tabs/archives.md",
-    "_tabs/about.md",
-    "README.md"
+    "_tabs/archives.md"
   ]
 }
