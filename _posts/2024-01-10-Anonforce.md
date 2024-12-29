@@ -20,14 +20,11 @@ image:
   alt: Anonforce
 ---
 
-# Anonforce  
-
-boot2root machine for FIT and bsides guatemala CTF  
-
-# Tasks  
-Read user.txt and root.txt  
-
-# nmap
+# Description  
+`Anonforce` is an easy `boot2root` machine for FIT and `bsides guatemala CTF` .
+The machine has two open ports ftp and ssh. Ftp allows anonymous login this allows us to access the contents of the home directory and also get a folder with `pgp`  keys that we can import in to our machine after cracking the passphrase using `john`. with that we `decrypt` the backup file to get the `/etc/passwd` file .Having access to the root hash we crack the hash to get the root password.
+# Port Scan
+We use `nmap` to  discover the open ports on the target.
 
 ```sh
 nmap -sV -sC -v 10.10.59.93 | tee nmap.txt
@@ -37,69 +34,31 @@ nmap -sV -sC -v 10.10.59.93 | tee nmap.txt
 PORT STATE SERVICE VERSION
 21/tcp open ftp vsftpd 3.0.3
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
-| drwxr-xr-x 2 0 0
-4096 Aug 11 2019 bin
-| drwxr-xr-x 3 0 0
-4096 Aug 11 2019 boot
-| drwxr-xr-x 17 0 0
-3700 Feb 08 07:18 dev
-| drwxr-xr-x 85 0 0
-4096 Aug 13 2019 etc
-| drwxr-xr-x 3 0 0
-4096 Aug 11 2019 home
-| lrwxrwxrwx 1 0 0
-33 Aug 11 2019 initrd.img -> boot/initrd.img-4.4.0-157-generic
-| lrwxrwxrwx 1 0 0
-33 Aug 11 2019 initrd.img.old -> boot/initrd.img-4.4.0-142-generic
-| drwxr-xr-x 19 0 0
-4096 Aug 11 2019 lib
-| drwxr-xr-x 2 0 0
-4096 Aug 11 2019 lib64
-| drwx------ 2 0 0
-16384 Aug 11 2019 lost+found
-| drwxr-xr-x 4 0 0
-4096 Aug 11 2019 media
-| drwxr-xr-x 2 0 0
-4096 Feb 26 2019 mnt
-| drwxrwxrwx 2 1000 1000
-4096 Aug 11 2019 notread [NSE: writeable]
-| drwxr-xr-x 2 0 0
-4096 Aug 11 2019 opt
-| dr-xr-xr-x 94 0 0
-0 Feb 08 07:18 proc
-| drwx------ 3 0 0
-4096 Aug 11 2019 root
-| drwxr-xr-x 18 0 0
-540 Feb 08 07:18 run
-| drwxr-xr-x 2 0 0
-12288 Aug 11 2019 sbin
-| drwxr-xr-x 3 0 0
-4096 Aug 11 2019 srv
-| dr-xr-xr-x 13 0 0
-0 Feb 08 07:18 sys
-| drwxrwxrwt 9 0 0
-4096 Feb 08 07:18 tmp [NSE: writeable]
-| drwxr-xr-x 10 0 0
-4096 Aug 11 2019 usr
-| drwxr-xr-x 11 0 0
-4096 Aug 11 2019 var
-| lrwxrwxrwx 1 0 0
-30 Aug 11 2019 vmlinuz -> boot/vmlinuz-4.4.0-157-generic
-|_lrwxrwxrwx 1 0 0
-30 Aug 11 2019 vmlinuz.old -> boot/vmlinuz-4.4.0-142-generic
-| ftp-syst:
-| STAT:
-| FTP server status:
-| Connected to ::ffff:10.8.172.59
-| Logged in as ftp
-| TYPE: ASCII
-| No session bandwidth limit
-| Session timeout in seconds is 300
-1/9| Control connection is plain text
-| Data connections will be plain text
-| At session startup, client count was 2
-| vsFTPd 3.0.3 - secure, fast, stable
-|_End of status
+| drwxr-xr-x 2 0 0 4096 Aug 11 2019 bin
+| drwxr-xr-x 3 0 0 4096 Aug 11 2019 boot
+| drwxr-xr-x 17 0 0 3700 Feb 08 07:18 dev
+| drwxr-xr-x 85 0 0 4096 Aug 13 2019 etc
+| drwxr-xr-x 3 0 0 4096 Aug 11 2019 home
+| ...
+| drwxr-xr-x 19 0 0 4096 Aug 11 2019 lib
+| drwxr-xr-x 2 0 0 4096 Aug 11 2019 lib64
+| drwx------ 2 0 0 16384 Aug 11 2019 lost+found
+| drwxr-xr-x 4 0 0 4096 Aug 11 2019 media
+| drwxr-xr-x 2 0 0 4096 Feb 26 2019 mnt
+| drwxrwxrwx 2 1000 1000 4096 Aug 11 2019 notread [NSE: writeable]
+| drwxr-xr-x 2 0 0 4096 Aug 11 2019 opt
+| dr-xr-xr-x 94 0 0 0 Feb 08 07:18 proc
+| drwx------ 3 0 0 4096 Aug 11 2019 root
+| drwxr-xr-x 18 0 0 540 Feb 08 07:18 run
+| drwxr-xr-x 2 0 0 12288 Aug 11 2019 sbin
+| drwxr-xr-x 3 0 0 4096 Aug 11 2019 srv
+| dr-xr-xr-x 13 0 0 0 Feb 08 07:18 sys
+| drwxrwxrwt 9 0 0 4096 Feb 08 07:18 tmp [NSE: writeable]
+| drwxr-xr-x 10 0 0 4096 Aug 11 2019 usr
+| drwxr-xr-x 11 0 0 4096 Aug 11 2019 var
+| lrwxrwxrwx 1 0 0 30 Aug 11 2019 vmlinuz -> boot/vmlinuz-4.4.0-157-generic
+|_lrwxrwxrwx 1 0 0 30 Aug 11 2019 vmlinuz.old -> boot/vmlinuz-4.4.0-142-generic
+...
 22/tcp open ssh OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey:
 | 2048 8a:f9:48:3e:11:a1:aa:fc:b7:86:71:d0:2a:f6:24:e7 (RSA)
@@ -108,18 +67,15 @@ PORT STATE SERVICE VERSION
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
-Two ports are open  
-- 21 = ftp  
-- 22 = ssh  
-
-ftp seems to lack log in credentials so will start with that one.  
+We get two open ports `ftp` on port 21 and `ssh` on port 22
+Ftp allows anonymous log in thus we can log in with no valid credentials.  
 
 # ftp_21
 ```sh
 ftp anonymous@10.10.59.93
 ```
 
-Used default credentials `anonymous:anonymous`  
+Use `anonymous:anonymous`  
 ![](../assets/img/try_hack_me/Easy/Anonforce/1.png)  
 Enumerating i got the user flag .  
 
@@ -137,7 +93,7 @@ cd notread
 mget *
 ```
 ![](../assets/img/try_hack_me/Easy/Anonforce/4.png)  
-one file is an image while the other has some guddies  
+One file is an image while the other has some guddies  
 ![](../assets/img/try_hack_me/Easy/Anonforce/5.png)
 
 Now we have 
@@ -165,38 +121,36 @@ gpg --import private.asc
 
 We need to crack the passphrase in order to import it into the key ring.  
 We can use `John the Ripper` password-cracking tool for this.  
-
 ```sh
  gpg2john private.asc > privatehash.txt
 ```
 
 Now we can run john to crack the hash using the famous `rockyou.txt` dictionary.  
-
 ```sh
  john privatehash.txt --wordlist=/usr/share/wordlists/rockyou.txt
 ```
 ![](../assets/img/try_hack_me/Easy/Anonforce/8.png)
 
-Now that we have the passphrase for the private key, we can import it into the keyring and decrypt the backup.pgp file.  
+Now that we have the passphrase for the private key, we can import it into the `keyring` and `decrypt` the `backup.pgp` file.  
 
 passphrase = `xbox360`
-
 ```sh
 gpg --import private.asc
 
 gpg --decrypt backup.pgp
 ```
 ![](../assets/img/try_hack_me/Easy/Anonforce/9.png)
-We will get a backup of the passwd file, that includes the password hash of root and melodias users.  
+
+We will get a backup of the `passwd` file, that includes the password hash of `root` and `melodias` users.  
 ![](../assets/img/try_hack_me/Easy/Anonforce/10.png)
 
-Now we crack the passwd file using john.
+Now we crack the `passwd` file using john.
 ![](../assets/img/try_hack_me/Easy/Anonforce/11.png)
 ![](../assets/img/try_hack_me/Easy/Anonforce/12.png)
 
   
-- username = root  
-- password = hikari  
+- username = `root`  
+- password = `hikari`  
 
 ```sh
  ssh root@10.10.59.93

