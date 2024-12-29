@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/template.md",
+                "file": "_posts/2024-12-29-Sea.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "template"
+              "title": "2024-12-29-Sea"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/template.md",
+                "file": "_posts/2024-12-29-Sea.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for template"
+              "title": "Backlinks for 2024-12-29-Sea"
             }
           },
           {
@@ -139,10 +139,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/template.md"
+                "file": "_posts/2024-12-29-Sea.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of template"
+              "title": "Outline of 2024-12-29-Sea"
             }
           }
         ],
@@ -164,9 +164,9 @@
   },
   "active": "9e64aec709bfa402",
   "lastOpenFiles": [
+    "_posts/template.md",
     "_posts/2024-12-29-Sea.md",
     "_posts/2024-11-15-Lian_Yu.md",
-    "_posts/template.md",
     "_posts/2024-03-28-Thompson.md",
     "assets/img/HTB/Easy/sea/sea01.png",
     "assets/img/HTB/Easy/sea/sea1.png",
