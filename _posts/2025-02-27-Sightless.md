@@ -1,7 +1,7 @@
 ---
 title: HackTheBox - Sightless
 author: Bonface
-date: 2025-02-22 00:00:00 +0000
+date: 2025-02-27 00:00:00 +0000
 categories:
   - HackTheBox
 tags:
@@ -15,7 +15,7 @@ tags:
   - command_injection
 image:
   path: /assets/img/HTB/Easy/sightless/sightless.png
-  alt: Hackfest
+  alt: sightless
 ---
 
 # Sightless
