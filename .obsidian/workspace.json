@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-02-27-Sightless.md",
+                "file": "_posts/2025-03-02-Sightless.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-02-27-Sightless"
+              "title": "2025-03-02-Sightless"
             }
           }
         ],
@@ -169,13 +169,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-02-27-Sightless.md",
+                "file": "_posts/2025-03-02-Sightless.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-02-27-Sightless"
+              "title": "Outline of 2025-03-02-Sightless"
             }
           }
         ],
@@ -195,12 +195,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e8ab88887b6fdcab",
+  "active": "86cfc9a8fd9833a4",
   "lastOpenFiles": [
     "assets/img/HTB/Easy/sightless/sightless.png",
     "_posts/image.png",
     "assets/img/HTB/Easy/sightless/sightless13.png",
-    "_posts/2025-02-27-Sightless.md",
+    "_posts/2025-03-02-Sightless.md",
     "_posts/2024-12-29-Sea.md",
     "_posts/2025-02-22-Hackfest 2.0 CTF.md",
     "assets/img/HTB/Easy/sightless/sightless9.png",
