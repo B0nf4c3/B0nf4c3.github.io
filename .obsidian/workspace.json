@@ -25,10 +25,14 @@
             "id": "9e64aec709bfa402",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2025-05-05-SecureChat.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-05-05-SecureChat"
             }
           }
         ],
@@ -89,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0a9ec4c889f35a83",
@@ -151,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-03-02-Sightless.md",
+                "file": "_posts/2025-05-05-SecureChat.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-03-02-Sightless"
+              "title": "Outline of 2025-05-05-SecureChat"
             }
           }
         ],
@@ -177,7 +182,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "86cfc9a8fd9833a4",
+  "active": "9e64aec709bfa402",
   "lastOpenFiles": [
     "_posts/2025-02-27-Sightless.md",
     "assets/img/HTB/Easy/sightless/sightless.png",

@@ -82,8 +82,8 @@ When we check our logcat we get this requests were made.
 Lets make them readable :)
 
 - Register  
-Request :   
 
+Request :   
 ```http
 POST http://44.206.226.86:5000/api/register
 Content-Type: application/json; charset=utf-8
@@ -105,13 +105,14 @@ Access-Control-Allow-Origin: *
 ```
 
 - Get User info :   
-Request :   
 
+Request :   
 ```http
 GET http://44.206.226.86:5000/api/user
 x-access-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYTFiNDdjM2QtOWM4OS00MDQ3LWJlYmQtY2YzZmVhOWFjN2Q3IiwiZW1haWwiOiJwZW50ZXN0ZXIiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NjUxMjg4Nn0.eHWWYR-mjdLZD4GNjtxNfFQs9sBxbcBOsuvXD7z1zFw
 
 ```
+
 Response :   
 ```http
 200 OK http://44.206.226.86:5000/api/user (517ms)
@@ -125,6 +126,7 @@ Access-Control-Allow-Origin: *
 ```
 
 - Chat   
+Request
 ```http 
 POST http://44.206.226.86:5000/api/chat
 Content-Type: application/json; charset=utf-8
@@ -147,7 +149,7 @@ Access-Control-Allow-Origin: *
 
 
 - Chat (get flag)  
-Request :   
+Request : 
 ```http
 POST http://44.206.226.86:5000/api/chat
 Content-Type: application/json; charset=utf-8
@@ -155,9 +157,9 @@ Content-Length: 18
 x-access-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYTFiNDdjM2QtOWM4OS00MDQ3LWJlYmQtY2YzZmVhOWFjN2Q3IiwiZW1haWwiOiJwZW50ZXN0ZXIiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NjUxMjg4Nn0.eHWWYR-mjdLZD4GNjtxNfFQs9sBxbcBOsuvXD7z1zFw
 {"message":"flag"}
 ```
-Response :   
-```http
 
+Response : 
+```http
 200 OK http://44.206.226.86:5000/api/chat (446ms)
 Server: gunicorn
 Date: Mon, 05 May 2025 06:30:39 GMT
@@ -168,6 +170,7 @@ Access-Control-Allow-Origin: *
 {"response":"Sorry, only admin@bitwall.co.ke can access the flag."}
 
 ```
+
 
 ### Understanding the requests
 From the logs we get that the application is reaching out to an api `http://44.206.226.86:5000/api/` .
