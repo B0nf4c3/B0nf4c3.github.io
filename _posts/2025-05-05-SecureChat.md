@@ -57,12 +57,15 @@ After installing and launching the application we get to a login screen and sinc
 As we interact with the application it generates some logs and to view this logs we can use `adb logcat` .
 - [Logcat](https://developer.android.com/tools/logcat) is a command-line tool used to display system and application log messages on Android devices.
 Logcat allows us to specify the process id and to get the pid we can use the package name and the ps command.
+
 ```bash
 adb shell ps | grep com.bitwall.securechat
 u0_a133        2962    404 12772428 143736 ep_poll   77d863dfa90a S com.bitwall.securechat
 
 ```
+
 The process id is `2962`
+
 ```sh
 adb logcat --pid=2962
 ```
@@ -77,8 +80,10 @@ We do get an email account : `admin@bitwall.co.ke`
 When we check our logcat we get this requests were made.
 ![](../assets/img/CTF_Competitions/Bitwall/logcat.png)
 Lets make them readable :)
-- Register
-Request : 
+
+- Register  
+Request :   
+
 ```http
 POST http://44.206.226.86:5000/api/register
 Content-Type: application/json; charset=utf-8
@@ -86,7 +91,8 @@ Content-Length: 43
 {"email":"pentester","password":"password"}
 
 ```
-Response : 
+
+Response :   
 ```http
 201 CREATED http://44.206.226.86:5000/api/register (486ms)
 Server: gunicorn
@@ -98,14 +104,15 @@ Access-Control-Allow-Origin: *
  {"message":"User registered successfully!","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYTFiNDdjM2QtOWM4OS00MDQ3LWJlYmQtY2YzZmVhOWFjN2Q3IiwiZW1haWwiOiJwZW50ZXN0ZXIiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NjUxMjg4Nn0.eHWWYR-mjdLZD4GNjtxNfFQs9sBxbcBOsuvXD7z1zFw"}
 ```
 
-- Get User info : 
-Request : 
+- Get User info :   
+Request :   
+
 ```http
 GET http://44.206.226.86:5000/api/user
 x-access-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYTFiNDdjM2QtOWM4OS00MDQ3LWJlYmQtY2YzZmVhOWFjN2Q3IiwiZW1haWwiOiJwZW50ZXN0ZXIiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NjUxMjg4Nn0.eHWWYR-mjdLZD4GNjtxNfFQs9sBxbcBOsuvXD7z1zFw
 
 ```
-Response : 
+Response :   
 ```http
 200 OK http://44.206.226.86:5000/api/user (517ms)
 Server: gunicorn
@@ -117,8 +124,8 @@ Access-Control-Allow-Origin: *
  {"email":"pentester","role":"user"}
 ```
 
-- Chat 
-```http
+- Chat   
+```http 
 POST http://44.206.226.86:5000/api/chat
 Content-Type: application/json; charset=utf-8
 Content-Length: 19
@@ -126,7 +133,7 @@ x-access-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYTFiNDdj
 {"message":"hello"}
 ```
 
-Response : 
+Response :   
 ```http
 200 OK http://44.206.226.86:5000/api/chat (469ms)
 Server: gunicorn
@@ -139,8 +146,8 @@ Access-Control-Allow-Origin: *
 ```
 
 
-- Chat (get flag)
-Request : 
+- Chat (get flag)  
+Request :   
 ```http
 POST http://44.206.226.86:5000/api/chat
 Content-Type: application/json; charset=utf-8
@@ -148,7 +155,7 @@ Content-Length: 18
 x-access-token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1dWlkIjoiYTFiNDdjM2QtOWM4OS00MDQ3LWJlYmQtY2YzZmVhOWFjN2Q3IiwiZW1haWwiOiJwZW50ZXN0ZXIiLCJyb2xlIjoidXNlciIsImV4cCI6MTc0NjUxMjg4Nn0.eHWWYR-mjdLZD4GNjtxNfFQs9sBxbcBOsuvXD7z1zFw
 {"message":"flag"}
 ```
-Response : 
+Response :   
 ```http
 
 200 OK http://44.206.226.86:5000/api/chat (446ms)
