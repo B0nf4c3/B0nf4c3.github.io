@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-12-29-Sea.md",
+                "file": "_posts/2025-05-05-SecureChat.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2024-12-29-Sea"
+              "title": "2025-05-05-SecureChat"
             }
           },
           {
@@ -184,20 +184,24 @@
   },
   "active": "9e64aec709bfa402",
   "lastOpenFiles": [
+    "_posts/picoCTF-2025.md",
+    "_posts/2025-03-12-picoCTF-2025.md",
+    "assets/img/CTF_Competitions/PicoCTF2025/pico.png",
+    "assets/img/CTF_Competitions/PicoCTF2025/Pasted image.png",
+    "assets/img/CTF_Competitions/PicoCTF2025",
+    "_posts/2025-05-05-SecureChat.md",
+    "_posts/2024-12-29-Sea.md",
     "_posts/2025-02-27-Sightless.md",
     "assets/img/HTB/Easy/sightless/sightless.png",
     "_posts/image.png",
     "assets/img/HTB/Easy/sightless/sightless13.png",
     "_posts/2025-03-02-Sightless.md",
-    "_posts/2024-12-29-Sea.md",
     "_posts/2025-02-22-Hackfest 2.0 CTF.md",
     "assets/img/HTB/Easy/sightless/sightless9.png",
     "assets/img/HTB/Easy/sightless/sightless8.png",
     "assets/img/HTB/Easy/sightless/sightless7.png",
     "assets/img/HTB/Easy/sightless/sightless6.png",
     "assets/img/HTB/Easy/sightless/sightless5.png",
-    "assets/img/HTB/Easy/sightless/sightless4.png",
-    "assets/img/HTB/Easy/sightless/sightless3.png",
     "assets/img/HTB/Easy/sightless",
     "assets/img/CTF_Competitions/Hackfest/Hackfest.png.crdownload",
     "assets/img/CTF_Competitions/Hackfest",
@@ -224,11 +228,7 @@
     "_posts/2024-04-18-brooklyn.md",
     "2024-12-01-CYBERGON CTF_2024.md",
     "2024-12-01-CYBERGON CTF_2024",
-    "assets/img/CTF_Competitions/BlueHens_imgs/Training Problem",
     "_posts/2024-02-28-PickleRick.md",
-    "_posts/2024-02-24-LazyAdmin.md",
-    "_posts/2024-02-27-OverlayFS.md",
-    "_posts/2024-02-07-Fowsniff_Walkthrough.md",
-    "_posts/2024-01-24-Bounty Hunter.md"
+    "_posts/2024-02-24-LazyAdmin.md"
   ]
 }
