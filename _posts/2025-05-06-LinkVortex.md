@@ -4,6 +4,7 @@ author: Bonface
 date: 2025-05-06 00:00:00 +0000
 categories:
   - HackTheBox
+  - Machines
 tags:
   - HackTheBox
   - linux
@@ -12,10 +13,14 @@ tags:
   - cms
   - symlinks
 image:
-  path: /assets/img/HTB/Easy/linkvortex/linkvortex.png
+  path: /assets/img/HTB/Machines/linkvortex/linkvortex.png
   alt: linkvortex.htb
 ---
-## Machine Overview
+
+<div align="center"> <script src="https://www.hackthebox.eu/badge/1670709"></script> </div>
+
+---
+
 `LinkVortex` is an easy Linux machine. The initial access is gained by finding an exposed .git directory, which contains credentials. These credentials give access to a Ghost CMS that is vulnerable to `CVE-2023-40028`, allowing users to upload symlinks and read files inside the container. From there, more credentials are found in the Ghost config file, which help get a shell as a user on the host. For privilege escalation, a script with sudo rights is exploited using a symlink race condition, which leads to root access.  
 
 # Enumeration

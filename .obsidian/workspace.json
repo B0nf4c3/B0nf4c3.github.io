@@ -4,35 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "dde164415ca0a6ff",
+        "id": "165a266c01cd5d5c",
         "type": "tabs",
         "children": [
           {
-            "id": "5d152f24c51bcb15",
+            "id": "348818d7fe0ad9fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-05-05-SecureChat.md",
+                "file": "_posts/2025-02-15-Cicada.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-05-05-SecureChat"
+              "title": "2025-02-15-Cicada"
             }
           },
           {
-            "id": "9e64aec709bfa402",
+            "id": "44d8237d9890c0c6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-05-05-SecureChat.md",
-                "mode": "source",
-                "source": false
+                "file": "_posts/2025-05-06-LinkVortex.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "2025-05-05-SecureChat"
+              "title": "2025-05-06-LinkVortex"
+            }
+          },
+          {
+            "id": "e11778675ad6797d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/2024-12-29-Sea.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "2024-12-29-Sea"
             }
           }
         ],
@@ -93,7 +107,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0a9ec4c889f35a83",
@@ -155,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-05-05-SecureChat.md",
+                "file": "_posts/2025-05-06-LinkVortex.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-05-05-SecureChat"
+              "title": "Outline of 2025-05-06-LinkVortex"
             }
           }
         ],
@@ -169,7 +184,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 249.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -181,15 +197,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9e64aec709bfa402",
+  "active": "44d8237d9890c0c6",
   "lastOpenFiles": [
+    "_posts/2024-12-29-Sea.md",
+    "_posts/2025-02-15-Cicada.md",
+    "_posts/2025-05-06-LinkVortex.md",
+    "_posts/2025-05-05-SecureChat.md",
     "_posts/picoCTF-2025.md",
     "_posts/2025-03-12-picoCTF-2025.md",
     "assets/img/CTF_Competitions/PicoCTF2025/pico.png",
     "assets/img/CTF_Competitions/PicoCTF2025/Pasted image.png",
     "assets/img/CTF_Competitions/PicoCTF2025",
-    "_posts/2025-05-05-SecureChat.md",
-    "_posts/2024-12-29-Sea.md",
     "_posts/2025-02-27-Sightless.md",
     "assets/img/HTB/Easy/sightless/sightless.png",
     "_posts/image.png",
@@ -210,8 +228,8 @@
     "_posts/images",
     "_posts/2024-11-08-BlueHens CTF 2024.md",
     "_posts/2024-11-11-Red.md",
-    "assets/img/HTB/Easy",
-    "assets/img/HTB/Easy/sea",
+    "assets/img/HTB/Machines",
+    "assets/img/HTB/Machines/sea",
     "assets/img/HTB",
     "_posts/sea",
     "_posts/2024-02-21-Kenobi.md",
@@ -226,8 +244,6 @@
     "_posts/2024-10-31-plotted.md",
     "_posts/2024-04-18-brooklyn.md",
     "2024-12-01-CYBERGON CTF_2024.md",
-    "2024-12-01-CYBERGON CTF_2024",
-    "_posts/2024-02-28-PickleRick.md",
-    "_posts/2024-02-24-LazyAdmin.md"
+    "2024-12-01-CYBERGON CTF_2024"
   ]
 }
