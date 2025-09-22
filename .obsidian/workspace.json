@@ -169,21 +169,23 @@
   },
   "active": "c1ecdd80372a681d",
   "lastOpenFiles": [
+    "assets/img/HTB/Machines/driver/driver.png",
+    "assets/img/HTB/Machines/driver/Driver_thesite.png",
+    "assets/img/HTB/Machines/driver/Driver_firmwareupdate.png",
+    "assets/img/HTB/Machines/driver/Driver_drive.png",
+    "assets/img/HTB/Machines/driver",
+    "assets/img/HTB/Machines/New folder",
+    "_posts/2025-05-03-Driver.md",
     "assets/img/HTB/Machines/precious/precious.png",
     "assets/img/HTB/Machines/precious/Precious_Website.png",
     "assets/img/HTB/Machines/precious/Precious_link2lh.png",
     "assets/img/HTB/Machines/precious",
-    "assets/img/HTB/Machines/New folder",
     "_posts/2025-05-01-Precious.md",
     "assets/img/HTB/Machines/boardlight/boardlight.png",
     "_posts/2025-04-30-Paper.md",
     "assets/img/HTB/Machines/boardlight/BoardLight_works.png",
     "assets/img/HTB/Machines/boardlight/BoardLight_revsshell.png",
     "assets/img/HTB/Machines/boardlight/BoardLight_perm.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_loggedin.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_exploit-error.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_Creds.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_vhost.png",
     "assets/img/HTB/Machines/boardlight",
     "_posts/2025-05-01-BoardLight.md",
     "_posts/2025-07-12-Dog.md",
@@ -212,8 +214,6 @@
     "assets/img/CTF_Competitions/Hackfest/Hackfest.png.crdownload",
     "assets/img/CTF_Competitions/Hackfest",
     "_posts/template.md",
-    "_posts/2024-03-28-Thompson.md",
-    "_posts/images",
-    "_posts/2024-02-21-Kenobi.md"
+    "_posts/2024-03-28-Thompson.md"
   ]
 }
