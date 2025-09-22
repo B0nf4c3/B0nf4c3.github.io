@@ -169,9 +169,15 @@
   },
   "active": "c1ecdd80372a681d",
   "lastOpenFiles": [
+    "assets/img/HTB/Machines/fluffy/fluffy.png",
+    "assets/img/HTB/Machines/fluffy/Fluffy_bloodhoundgetshell.png",
+    "assets/img/HTB/Machines/fluffy/Fluffy_svc-members.png",
+    "assets/img/HTB/Machines/fluffy/Fluffy_Sn8-Pw3nd.png",
+    "assets/img/HTB/Machines/fluffy",
+    "assets/img/HTB/Machines/New folder",
+    "_posts/2025-09-20-Fluffy.md",
     "assets/img/HTB/Machines/nocturnal/nocturnal.png",
     "assets/img/HTB/Machines/nocturnal",
-    "assets/img/HTB/Machines/New folder",
     "_posts/2025-08-16-Nocturnal.md",
     "assets/img/HTB/Machines/driver/driver.png",
     "assets/img/HTB/Machines/driver/Driver_thesite.png",
@@ -181,13 +187,9 @@
     "_posts/2025-05-03-Driver.md",
     "assets/img/HTB/Machines/precious/precious.png",
     "assets/img/HTB/Machines/precious/Precious_Website.png",
-    "assets/img/HTB/Machines/precious/Precious_link2lh.png",
     "assets/img/HTB/Machines/precious",
     "_posts/2025-05-01-Precious.md",
-    "assets/img/HTB/Machines/boardlight/boardlight.png",
     "_posts/2025-04-30-Paper.md",
-    "assets/img/HTB/Machines/boardlight/BoardLight_works.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_revsshell.png",
     "assets/img/HTB/Machines/boardlight",
     "_posts/2025-05-01-BoardLight.md",
     "_posts/2025-07-12-Dog.md",
@@ -212,8 +214,6 @@
     "assets/img/CTF_Competitions/PicoCTF2025",
     "_posts/2025-02-27-Sightless.md",
     "_posts/2025-03-02-Sightless.md",
-    "assets/img/HTB/Easy/sightless",
-    "assets/img/CTF_Competitions/Hackfest/Hackfest.png.crdownload",
-    "_posts/template.md"
+    "assets/img/HTB/Easy/sightless"
   ]
 }
