@@ -169,6 +169,12 @@
   },
   "active": "c1ecdd80372a681d",
   "lastOpenFiles": [
+    "assets/img/HTB/Machines/precious/precious.png",
+    "assets/img/HTB/Machines/precious/Precious_Website.png",
+    "assets/img/HTB/Machines/precious/Precious_link2lh.png",
+    "assets/img/HTB/Machines/precious",
+    "assets/img/HTB/Machines/New folder",
+    "_posts/2025-05-01-Precious.md",
     "assets/img/HTB/Machines/boardlight/boardlight.png",
     "_posts/2025-04-30-Paper.md",
     "assets/img/HTB/Machines/boardlight/BoardLight_works.png",
@@ -178,11 +184,7 @@
     "assets/img/HTB/Machines/boardlight/BoardLight_exploit-error.png",
     "assets/img/HTB/Machines/boardlight/BoardLight_Creds.png",
     "assets/img/HTB/Machines/boardlight/BoardLight_vhost.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_site.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_whoamicmd.png",
-    "assets/img/HTB/Machines/boardlight/BoardLight_whoami.png",
     "assets/img/HTB/Machines/boardlight",
-    "assets/img/HTB/Machines/New folder",
     "_posts/2025-05-01-BoardLight.md",
     "_posts/2025-07-12-Dog.md",
     "assets/img/HTB/Machines/paper",
@@ -212,8 +214,6 @@
     "_posts/template.md",
     "_posts/2024-03-28-Thompson.md",
     "_posts/images",
-    "assets/img/HTB/Machines",
-    "_posts/2024-02-21-Kenobi.md",
-    "_posts/2024-02-14-Ignite.md"
+    "_posts/2024-02-21-Kenobi.md"
   ]
 }
