@@ -1,7 +1,7 @@
 ---
 title: HackTheBox -Nocturnal
 author: Bonface
-date: 2025-04-18 00:00:00 +0000
+date: 2025-08-16 00:00:00 +0000
 categories:
   - HackTheBox
   - Machines
