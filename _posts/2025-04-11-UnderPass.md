@@ -16,7 +16,7 @@ image:
   alt: underpass.htb
 ---
 
-<div align="center"> <script src="https://www.hackthebox.eu/badge/1670709"></script> </div>
+<div align="center"> <script src="https://app.hackthebox.com/profile/1670709"></script> </div>
 
 ---
 **Underpass** is an easy-rated Linux machine that starts with a default Apache Ubuntu page on port 80. Further enumeration reveals an SNMP service running on UDP port 161, which discloses that the box is hosting **daloRADIUS**. By navigating through the application and using default credentials, access is gained to the operators' panel, where a user hash for `svcMosh` is discovered and cracked. With the obtained password, SSH access is achieved. Privilege escalation is possible due to misconfigured `sudo` permissions allowing `svcMosh` to execute `mosh-server` as root, ultimately leading to full system compromise.

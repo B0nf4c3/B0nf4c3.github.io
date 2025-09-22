@@ -17,7 +17,7 @@ image:
   alt: linkvortex.htb
 ---
 
-<div align="center"> <script src="https://www.hackthebox.eu/badge/1670709"></script> </div>
+<div align="center"> <script src="https://app.hackthebox.com/profile/1670709"></script> </div>
 
 ---
 
