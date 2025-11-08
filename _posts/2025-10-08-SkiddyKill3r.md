@@ -1,7 +1,7 @@
 ---
 title: SkiddyKill3r
 author: Bonface
-date: 2025-11-08 02:54
+date: 2025-10-08 02:54
 categories:
   - Challenges
   - CyberTalents
