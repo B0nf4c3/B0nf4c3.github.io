@@ -134,12 +134,12 @@ dashboard               [Status: 302, Size: 199, Words: 18, Lines: 6, Duration: 
 With that we visit the site.  
 The site :  
 
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_website.png)
+![](../assets/img/HTB/Machines/Artificial/Artificial_website.png)
 
 We get the page but since we don't have an account we cant do much.Let's create an account and login.  
 We get to the `/dashboard`   
 
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_dashboard.png)
+![](../assets/img/HTB/Machines/Artificial/Artificial_dashboard.png)
 
 On the dashboard we get that we can Upload, manage, and run our AI models here.  
 Also we are given two files : a requirement file and a docker file .  
@@ -267,7 +267,7 @@ nc -nlvp 7227
 
 After uploading we do get a link where we can view predictions but to us this will just trigger the reverse shell.  
 
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_revshell.png)
+![](../assets/img/HTB/Machines/Artificial/Artificial_revshell.png)
 
 
 
@@ -500,7 +500,7 @@ ssh gael@artificial.htb -L 9898:127.0.0.1:9898
 ```
 
 Accessing the port  
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_portforward.png)
+![](../assets/img/HTB/Machines/Artificial/Artificial_portforward.png)
 
 
 To proceed we need valid credentials thus we go back to the backup file.
@@ -574,7 +574,7 @@ Now we have this creds :
 - Password : `!@#$%^`  
 
 And boom we are logged in.  
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_loggedin.png)
+![](../assets/img/HTB/Machines/Artificial/Artificial_loggedin.png)
 
 
 The overview part tells us we are working with `restic` an quick google search does land us to its github [repository](https://github.com/restic/restic) .  
@@ -585,14 +585,14 @@ restic is a backup program that is fast, efficient and secure.
 Rest Server is a high performance HTTP server that implements restic's REST backend API. It provides secure and efficient way to backup data remotely, using restic backup client via the rest: URL.  
 ```
 
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_restic.png)  
+![](../assets/img/HTB/Machines/Artificial/Artificial_restic.png)  
 
 Searching for ways to privesc using this program lands us to [gtfobins-restic](https://gtfobins.github.io/gtfobins/restic/)  
 
 Here is the flow on how we can do a back up of the root directory.  
 
 Creating a repo :   
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_createRepo.png)  
+![](../assets/img/HTB/Machines/Artificial/Artificial_createRepo.png)  
 
 We start by creating a server with a custom persistence directory and with authentication disabled on our attacker machine.  
 ```sh
@@ -642,4 +642,4 @@ ssh -i id_rsa root@artificial.htb
 
 And that's it for the box :)  
 
-![](../assets/img/HTB/Machines/Artificial/Artificial.pngArtificial_Pwn3d.png)
+![](../assets/img/HTB/Machines/Artificial/Artificial_Pwn3d.png)
