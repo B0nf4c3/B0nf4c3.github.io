@@ -18,7 +18,7 @@ tags:
   - port-forwarding
   - gtfobins
 image:
-  path: D:\myblog/assets/img/HTB/Machines/Artificial/Artificial.pngArtificial.png
+  path: assets/img/HTB/Machines/Artificial/Artificial.png
   alt: Artificial.htb
 ---
 
